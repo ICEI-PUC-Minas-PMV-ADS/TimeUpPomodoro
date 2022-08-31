@@ -1,36 +1,61 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+Em um mundo cada vez mais acelerado e com múltiplas atividades do cotidiano, se faz necessário gerenciar os estudos e tantas informações novas que o cenário atual proporciona, seja em ambiente escolar, acadêmico ou em ambientes profissionais. A má administração das atividades cotidianas causa nas pessoas fadiga, stress e pouco aproveitamento dos tópicos estudados. 
+Um método que auxilia o gerenciamento de tempo é a "A técnica Pomodoro, desenvolvida em 1988 pelo italiano Francisco Cirillo, é um método de gestão de tempo que pode ser aplicado para diversas tarefas, seja nos estudos, seja no trabalho.
+Conforme o livro de Cirillo “The Pomodoro Technique”, a técnica foi criada para utilizar o tempo como um valioso aliado e realizar o que queremos fazer e do jeito que queremos fazê-lo. Além disso, capacita-nos continuamente para melhorar nossos processos.
+Ao usar esse método, é possível saber não só a quantidade de atividades que são feitas, como também a qualidade. Além disso, pode-se medir o que está atrapalhando a realização das tarefas.
+A simples técnica pode servir também na gestão do trabalho, uma vez que profissionais (tanto nas empresas quanto em situação de trabalho remoto) podem apresentar dificuldades em administrar as tarefas e o tempo para execução destas. 
+Com o advento dos aparelhos eletrônicos, principalmente smartphones e tabletes como auxiliar na educação e uma poderosa ferramenta no ambiente de trabalho, todos com um dispositivo digital, por mais simples que possa ser conseguem usar o método pomodoro.
+O método "usa o tempo como aliado" e consiste em dividir nosso dia em blocos de 25 minutos ("pomodoros"), com pequenos intervalos entre eles.
 
-## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+Este é o passo a passo:
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+- 1 Escolha a tarefa a ser executada;
+- 2 Ajuste o cronômetro para 25 minutos;
+- 3 Trabalhe na tarefa escolhida até que o alarme toque;
+- 4 Quando o alarme tocar, verifique se completou a tarefa
+- 5 Faça uma pausa curta (5 minutos);
+- 6 Depois de concluir quatro blocos de 25 minutos de trabalho, faça uma pausa mais longa (30 minutos).
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+## Especificação do Problema
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+A escolha da aplicação foi elaborada pensando em indivíduos que se dedicam às atividades estudantis e precisam balancear estudos, trabalhos e provas, sejam eles jovens em idade escolar ou universitários que tem dificuldades em gerenciar o tempo de seus afazeres, o que causa nos estudantes prostração e um entendimento precário dos tópicos que estão sendo estudados. Porém tais estudantes nem sempre tem um computador a disposição, por isso o projeto será desenvolvido em React Native.
+No mercado de trabalho também é difícil a gestão do tempo com tantas tarefas a serem realizadas em ambientes cada vez mais automatizados, no cotidiano profissional existe uma carência de softwares que proporcionem a profissionais meios de gestão do tempo e organização de conteúdos e  tarefas com base na técnica Pomodoro, sobretudo em língua portuguesa, a aplicação visa um melhor proveito e produtividade das atividades a serem realizadas, bem como garantindo um melhor equilíbrio de vida na rotina cotidiana.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+A criação de uma aplicação mobile que permita a gestão do tempo para execução de atividades de estudo e de trabalho, visando à diminuição da ansiedade e ao aumento do foco e concentração nas tarefas, evitando tempo desperdiçado e distrações com base na técnica Pomodoro.
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+### Objetivos específicos
+
+-	Fornecer aos estudantes e profissionais instrumentos que propiciem a organização de conteúdos e metas;
+- Estabelecer critérios de tempo para execução de atividades e descanso de acordo com os horários de estudantes e de profissionais;
+-	Permitir que estudantes e profissionais organizem melhor tempos de execução de tarefas e de descanso;
+-	Auxiliar as capacidades de abstração e foco na rotina de estudantes e profissionais.
+-	O aumento da produtividade.
+
 
 ## Justificativa
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Justificativa
+O problema em questão se manifesta não só na questão de prazos, mas também na separação do tempo do trabalho no dia a dia, que pode acabar se estendendo mais que o devido.
+Aplicar a técnica, gera grandes benefícios de produtividade em estudos e projetos. Porém os benefícios conseguem ir além, chegando até mesmo a um dos pontos mais importantes na realização das tarefas: a motivação.
+Ajuda a gerenciar as distrações e controlar seu tempo
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+- Aumenta o seu senso de responsabilidade
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+- Auxilia a planejar melhor sua semana e projetos
+
+- Diminui a fadiga mental e o estresse
+
+- Mantêm a sua motivação
+
+
+## Proposta da solução
+
+A criação de uma aplicação mobile pois os mesmos tem ampla possibilidade de uso e de funcionalidade e  isso facilitará o acesso rápido e remoto a um aplicativo de controle de tempo e tarefas. 
+Isso significa que todos, desde estudantes em idade escolar até reitores que trabalham em grandes universidades, poderão se beneficiar das sessões de trabalho programadas e das pausas que o Pomodoro oferece.
+
 
 ## Público-Alvo
 

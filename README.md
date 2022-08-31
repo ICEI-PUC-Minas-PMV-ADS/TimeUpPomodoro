@@ -1,23 +1,33 @@
-# TÍTULO DO PROJETO
+# 🍅 TimeUp - Pomodoro
 
-`CURSO`
+<a href="https://icei-puc-minas-pmv-ads.github.io/PetCare/"><img src="https://dionatanmoura.files.wordpress.com/2016/06/pomodoro.png" width="1900px"></a>
+#
+`ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de uma Aplicação Móvel em um Ambiente de Negócio - Turma 2 -`
 
-`SEMESTRE`
+`2º semestre`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+_A Técnica Pomodoro é um método de produtividade que divide as tarefas em intervalos cronometrados. 
+Esses intervalos – chamados pomodoros – são tradicionalmente de 25 minutos e separados por intervalos de 5 minutos. A técnica é fácil de adotar e se aplica a qualquer tarefa ou projeto._
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+🍅 *Allana Tavares Bastos*
+
+🍅 *Gabriel Garcia*
+
+🍅 *Kaique Rocha*
+
+🍅 *Leonardo Filter*
+
+🍅 *Mariane Serapião*
+
+🍅 *Sabrina Gomes*
 
 ## Orientador
 
-* Nome completo do professor 1
+🍅 Mateus Curcino de Lima
 
 ## Instruções de utilização
 
