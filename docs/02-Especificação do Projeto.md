@@ -47,7 +47,12 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 ## Requisitos do projeto
 
-O escopo funcional do projeto abrange duas principais partes: requisitos funcionais, descrevendo  possibilidades  de interação  dos  usuários, e requisitos  não  funcionais, descrevendo os aspectos que o sistema deverá apresentar de maneira geral. Estes requisitos são apresentados a seguir, acompanhados por algumas limitações identificadas. Tais informações foram dispostas em tabelas para uma melhor compreensão.
+O escopo funcional do projeto abrange duas principais partes: 
+
+1. Requisitos Funcionais: descrevem as  possibilidades  de interação  dos  usuários, 
+2. Requisitos  não  funcionais: descrevem os aspectos que o sistema deverá apresentar de maneira geral. 
+
+Estes requisitos são apresentados a seguir, acompanhados por algumas limitações identificadas. Tais informações foram dispostas em tabelas para uma melhor compreensão.
 
 ### Requisitos funcionais
 
@@ -110,23 +115,32 @@ A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualizaç
 
 # Gerenciamento de Projeto
 
-De acordo com o PMBoK v6, há 10 áreas pilares para gerenciar projetos e que caracterizam a multidisciplinaridade envolvida: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições e Partes Interessadas. Para o desenvolvimento de projetos, é necessário considerar a gerência de todas essas áreas. Como tais áreas se complementam e estão diretamente relacionadas, não é possível examinar apenas uma área. Por exemplo, a ampliação do escopo de um projeto interfere também em seu cronograma e em seus custos. 
+De acordo com o PMBoK v6, há 10 áreas pilares para gerenciar projetos e que caracterizam a multidisciplinaridade envolvida: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições e Partes Interessadas. 
+
+Para o desenvolvimento de projetos, é necessário considerar a gerência de todas essas áreas. Como tais áreas se complementam e estão diretamente relacionadas, não é possível examinar apenas uma área. Por exemplo, a ampliação do escopo de um projeto interfere também em seu cronograma e em seus custos. 
+![img_2.png](img_2.png)
 
 ## Gerenciamento de tempo
 
-O gráfico de Gantt, ou diagrama de Gantt, é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las. No momento, o diagrama mostra o planejamento mais geral das entregas de cada etapa, sendo que as tarefas específicas e seus responsáveis são definidos a cada sprint e gerenciados no Microsoft Agenda.
+O gráfico de Gantt, ou diagrama de Gantt, é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las. 
+
+No momento, o diagrama mostra o planejamento mais geral das entregas de cada etapa, sendo que as tarefas específicas e seus responsáveis são definidos a cada sprint e gerenciados no [Microsoft Planner](https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=ca2f5986-86cc-4dbf-9c21-b586a491ced9&planId=h_Q9NmwXaUijvknhEUY8bWQAEcmA).
+
+O [Microsoft Planner](https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=ca2f5986-86cc-4dbf-9c21-b586a491ced9&planId=h_Q9NmwXaUijvknhEUY8bWQAEcmA) é um aplicativo de planejamento disponível na plataforma Microsoft 365, sendo uma ferramenta orientada para o trabalho em equipe que pode ser usada de várias maneiras. Desta forma, o projeto está organizado pelo método Kanban, possibilitando a visualização geral das atividades, o acompanhamento da evolução dos requisitos e o controle de tempo.
 
 ![Planner - tarefas](https://github.com/ICEI-PUC-Minas-PMV-ADS/Pomodoro/blob/main/docs/img/gantt.jpg)
 
 
 ## Gerenciamento de pessoal
 
-O gerenciamento adequado de tarefas permite que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. Conforme mencionado no item anterior, o Microsoft Agenda apresenta o detalhamento de cada sprint:
+O gerenciamento adequado de tarefas permite que o projeto alcance altos níveis de produtividade. Por isso, é fundamental que ocorra a gestão de tarefas e de pessoas, de modo que os times envolvidos no projeto possam ser facilmente gerenciados. 
+
+Conforme mencionado no item anterior, o [Microsoft Planner](https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=ca2f5986-86cc-4dbf-9c21-b586a491ced9&planId=h_Q9NmwXaUijvknhEUY8bWQAEcmA) apresenta o detalhamento de cada sprint:
 
 ![Planner - tarefas](https://github.com/ICEI-PUC-Minas-PMV-ADS/Pomodoro/blob/main/docs/img/Planner%20-%20%C3%A9picos.png)
 
 
-No Microsoft Agenda, as tarefas podem também ser rastreadas por status, bucket, prioridade e responsável, bem como seu estado de execução:
+No Microsoft Planner, as tarefas podem também ser rastreadas por status, bucket, prioridade e responsável, bem como seu estado de execução:
 
 ![Planner](https://github.com/ICEI-PUC-Minas-PMV-ADS/Pomodoro/blob/main/docs/img/Planner%20-%20gr%C3%A1ficos.png)
 ![Planner - membros](https://github.com/ICEI-PUC-Minas-PMV-ADS/Pomodoro/blob/main/docs/img/Planner%20-%20membros.png)
