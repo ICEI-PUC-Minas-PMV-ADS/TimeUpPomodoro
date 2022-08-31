@@ -6,28 +6,30 @@
 
 `Projeto: Desenvolvimento de uma Aplicação Móvel em um Ambiente de Negócio - Turma 2 -`
 
-`2º semestre`
+`2º semestre de 2022 - Eixo 3`
 
 _A Técnica Pomodoro é um método de produtividade que divide as tarefas em intervalos cronometrados. 
 Esses intervalos – chamados pomodoros – são tradicionalmente de 25 minutos e separados por intervalos de 5 minutos. A técnica é fácil de adotar e se aplica a qualquer tarefa ou projeto._
 
 ## Integrantes
 
-🍅 *Allana Tavares Bastos*
+🍅 <a href="https://github.com/allana-tb" target="_blank"> **Allana Tavares Bastos**</a>
 
-🍅 *Gabriel Garcia*
+🍅 <a href="https://github.com/Gabrie1Garcia"> **Gabriel Garcia**</a>
 
-🍅 *Kaique Rocha*
+🍅 <a href="https://github.com/kaiqueRoc"> **Kaique Rocha** </a>
 
-🍅 *Leonardo Filter*
+🍅 <a href="https://github.com/leofilter"> **Leonardo Filter** </a>
 
-🍅 *Mariane Serapião*
+🍅 <a href="https://github.com/Mariane03"> **Mariane Serapião** </a>
 
-🍅 *Sabrina Gomes*
+🍅 <a href="https://github.com/sabrinagomessilva"> **Sabrina Gomes** </a>
+
 
 ## Orientador
 
-🍅 Mateus Curcino de Lima
+🍅 <a href="https://github.com/mateuscurcino"> **Mateus Curcino de Lima** </a>
+
 
 ## Instruções de utilização
 
