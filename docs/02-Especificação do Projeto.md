@@ -124,9 +124,9 @@ Para o desenvolvimento de projetos, é necessário considerar a gerência de tod
 
 O gráfico de Gantt, ou diagrama de Gantt, é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las. 
 
-No momento, o diagrama mostra o planejamento mais geral das entregas de cada etapa, sendo que as tarefas específicas e seus responsáveis são definidos a cada sprint e gerenciados no [Microsoft Planner](https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=ca2f5986-86cc-4dbf-9c21-b586a491ced9&planId=h_Q9NmwXaUijvknhEUY8bWQAEcmA).
+No momento, o diagrama mostra o planejamento mais geral das entregas de cada etapa, sendo que as tarefas específicas e seus responsáveis são definidos a cada sprint e gerenciados no [Microsoft Planner: "Projeto TimeUp - Pomodoro"](https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=ca2f5986-86cc-4dbf-9c21-b586a491ced9&planId=h_Q9NmwXaUijvknhEUY8bWQAEcmA).
 
-O [Microsoft Planner](https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=ca2f5986-86cc-4dbf-9c21-b586a491ced9&planId=h_Q9NmwXaUijvknhEUY8bWQAEcmA) é um aplicativo de planejamento disponível na plataforma Microsoft 365, sendo uma ferramenta orientada para o trabalho em equipe que pode ser usada de várias maneiras. Desta forma, o projeto está organizado pelo método Kanban, possibilitando a visualização geral das atividades, o acompanhamento da evolução dos requisitos e o controle de tempo.
+O [Microsoft Planner: ](https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=ca2f5986-86cc-4dbf-9c21-b586a491ced9&planId=h_Q9NmwXaUijvknhEUY8bWQAEcmA) é um aplicativo de planejamento disponível na plataforma Microsoft 365, sendo uma ferramenta orientada para o trabalho em equipe que pode ser usada de várias maneiras. Desta forma, o projeto está organizado pelo método Kanban, possibilitando a visualização geral das atividades, o acompanhamento da evolução dos requisitos e o controle de tempo.
 
 ![Planner - tarefas](https://github.com/ICEI-PUC-Minas-PMV-ADS/Pomodoro/blob/main/docs/img/gantt.jpg)
 
