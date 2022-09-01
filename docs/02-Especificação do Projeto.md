@@ -137,7 +137,7 @@ O gerenciamento adequado de tarefas permite que o projeto alcance altos níveis 
 
 Conforme mencionado no item anterior, o [Microsoft Planner](https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=ca2f5986-86cc-4dbf-9c21-b586a491ced9&planId=h_Q9NmwXaUijvknhEUY8bWQAEcmA) apresenta o detalhamento de cada sprint:
 
-![Planner - tarefas](https://github.com/ICEI-PUC-Minas-PMV-ADS/Pomodoro/blob/main/docs/img/Planner%20-%20%C3%A9picos.png)
+![img_3.png](img_3.png)
 
 
 No Microsoft Planner, as tarefas podem também ser rastreadas por status, bucket, prioridade e responsável, bem como seu estado de execução:
