@@ -13,7 +13,7 @@ Esses intervalos – chamados pomodoros – são tradicionalmente de 25 minutos 
 
 ## Integrantes
 
-🍅 <a href="https://github.com/allana-tb" target="_blank"> **Allana Tavares Bastos**</a>
+🍅 <a href="https://github.com/allana-tb" target="_blank"> **Allana Tavares**</a>
 
 🍅 <a href="https://github.com/Gabrie1Garcia"> **Gabriel Garcia**</a>
 

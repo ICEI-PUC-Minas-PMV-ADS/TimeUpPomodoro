@@ -53,7 +53,7 @@ O grupo utilizou um board no GitHub Projects a fim de acompanhar andamento do pr
 No Github Projects, o quadro Kanban é atualizado após a realização de commits associados a tarefas nas sprints, demonstrado na imagem:
 ![GitProjects](https://github.com/ICEI-PUC-Minas-PMV-ADS/Pomodoro/blob/main/docs/img/kanban.jpg)
 
-Já a Microsoft Agenda permite o gerenciamento de pessoal, conforme explicitado na seção anterior.
+Já o [Microsoft Planner: ](https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=ca2f5986-86cc-4dbf-9c21-b586a491ced9&planId=h_Q9NmwXaUijvknhEUY8bWQAEcmA) permite o gerenciamento de pessoal, conforme explicitado na seção anterior.
 
 
 
@@ -68,5 +68,5 @@ Já as ferramentas empregadas no projeto e suas respectivas funções são:
 |Ferramentas de comunicação |Github, Microsoft Teams, WhatsApp | Foram ferramentas escolhidas por conveniência: conexão direta ao código, contato com o professor e demais membros e acesso diário - nessa ordem. |
 |Ferramentas de diagramação |Figma | Foi escolhida por seus recursos de wireframing bem como prototipagem de telas. |
 |Ferramentas de modelagem de processos |Astah, BPMN.iO | |
-|Ferramentas de gestão de projetos |GitHub Projects, Notion, Microsoft Agenda | O Projects auxilia na integração de tarefas atribuídas à sua execução em commits, ao passo que a Agenda Microsoft permite a avaliação das sprints e um melhor gerenciamento de colaboradores. |
+|Ferramentas de gestão de projetos |GitHub Projects, Notion, [Microsoft Planner: ](https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=ca2f5986-86cc-4dbf-9c21-b586a491ced9&planId=h_Q9NmwXaUijvknhEUY8bWQAEcmA) | O Projects auxilia na integração de tarefas atribuídas à sua execução em commits, ao passo que o Microsoft Planner permite a avaliação das sprints e um melhor gerenciamento de colaboradores. |
 
