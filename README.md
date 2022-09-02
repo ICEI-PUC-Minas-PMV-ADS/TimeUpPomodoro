@@ -1,7 +1,6 @@
-# 🍅 TimeUp - Pomodoro
 
-<a href="https://icei-puc-minas-pmv-ads.github.io/PetCare/"><img src="https://dionatanmoura.files.wordpress.com/2016/06/pomodoro.png" width="1900px"></a>
-#
+
+![](../../videos/pomodoro/TimeUp.gif)
 `ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
 `Projeto: Desenvolvimento de uma Aplicação Móvel em um Ambiente de Negócio - Turma 2 -`
