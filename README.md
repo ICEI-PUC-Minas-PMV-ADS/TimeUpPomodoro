@@ -1,5 +1,6 @@
 
-![TimeUp2](https://user-images.githubusercontent.com/78277341/188037352-c1f3c2d9-33f0-4e1c-b9d2-b850b8a689cb.gif)
+
+![TimeUp3](https://user-images.githubusercontent.com/78277341/188039114-810b1476-46b2-452b-9d4f-88e95938bca3.gif)
 
 `ANÁLISE E DESENVOLVIMENTO DE SISTEMAS`
 
