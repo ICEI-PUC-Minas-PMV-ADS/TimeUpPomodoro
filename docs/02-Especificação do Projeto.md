@@ -118,7 +118,11 @@ A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualizaç
 De acordo com o PMBoK v6, há 10 áreas pilares para gerenciar projetos e que caracterizam a multidisciplinaridade envolvida: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições e Partes Interessadas. 
 
 Para o desenvolvimento de projetos, é necessário considerar a gerência de todas essas áreas. Como tais áreas se complementam e estão diretamente relacionadas, não é possível examinar apenas uma área. Por exemplo, a ampliação do escopo de um projeto interfere também em seu cronograma e em seus custos. 
-![img_2.png](img_2.png)
+
+Para realizar esta etapa, a equipe utilizou o [ProjectLibre](https://www.projectlibre.com/), conforme sugerido nas aulas de Gerência de Projetos de TI. 
+Desta forma, a equipe registrou as etapas 1 e 2 do projeto, com suas respectivas datas e requisitos, gerando assim, o gráfico de Gantt e o diagrama de rede, automaticamente. Também foi possível identificar as atividades concorrentes,  o caminho crítico, dentre outros elementos.
+A equipe pode visualizar as tarefas que devem ser realizadas, organizando-as em hierarquia. 
+![img_4.png](img_4.png)![img_2.png](img_2.png)
 
 ## Gerenciamento de tempo
 
