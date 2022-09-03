@@ -121,8 +121,8 @@ Para o desenvolvimento de projetos, é necessário considerar a gerência de tod
 
 Para realizar esta etapa, a equipe utilizou o [ProjectLibre](https://www.projectlibre.com/), conforme sugerido nas aulas de Gerência de Projetos de TI. 
 Desta forma, a equipe registrou as etapas 1 e 2 do projeto, com suas respectivas datas e requisitos, gerando assim, o gráfico de Gantt e o diagrama de rede, automaticamente. Também foi possível identificar as atividades concorrentes,  o caminho crítico, dentre outros elementos.
-A equipe pode visualizar as tarefas que devem ser realizadas, organizando-as em hierarquia. 
-![img_4.png](img_4.png)![img_2.png](img_2.png)
+A equipe pode visualizar as tarefas que devem ser realizadas, organizando-as em hierarquia.
+![img_5.png](img_5.png)
 
 ## Gerenciamento de tempo
 
