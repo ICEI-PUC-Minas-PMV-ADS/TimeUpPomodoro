@@ -69,4 +69,4 @@ Isso significa que todos (desde estudantes em idade escolar até reitores que tr
 
 ## Público-Alvo
 
-*O tempo é o ativo mais preciso que você possui.* Use-o ao seu favor! Ao administrá-lo da forma correta, você se torna mais eficiente e produtivo.
+-O tempo é o ativo mais preciso que você possui.- Use-o ao seu favor! Ao administrá-lo da forma correta, você se torna mais eficiente e produtivo.
