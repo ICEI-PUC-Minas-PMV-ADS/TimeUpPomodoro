@@ -70,3 +70,5 @@ Isso significa que todos (desde estudantes em idade escolar até reitores que tr
 ## Público-Alvo
 
 **O tempo é o ativo mais preciso que você possui.** Use-o ao seu favor! Ao administrá-lo da forma correta, você se torna mais eficiente e produtivo.
+
+O enfoque deste projeto será em estudantes em idade escolar, pessoas que estão em preparação para processos seletivos ou concursos públicos e profissionais que atuem no mercado de trabalho que precisam gerenciar melhor o seu tempo e que utilizem computadores e dispositivos móveis conectados à internet como ferramentas de trabalho e estudo de maneira frequente.
