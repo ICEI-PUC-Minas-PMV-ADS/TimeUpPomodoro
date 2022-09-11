@@ -154,4 +154,19 @@ No Microsoft Planner, as tarefas podem também ser rastreadas por status, bucket
 
 O gerenciamento financeiro permite a todos integrantes do projeto uma ideia inicial de gastos e investimentos, sendo assim não atigindo investidores de forma inesperada e mantendo a ideia de gasto inicial do projeto.
 
-![image](https://user-images.githubusercontent.com/88354883/187205566-4800d7b8-3d01-4cb0-b25b-f9fdec528424.png)
+| Gasto Estimado                 | Valor                                                                                   |
+|--------------------------------|----------------------------------------------------------------------------------------------------------|
+| Recursos Humanos               |   R$ 20.000,00                                                                                                  
+| Designing (R$ 25,00/Hora)      |   R$ 5.000,00              
+| Desenvolvedor  (R$ 70,00/Hora) |   R$ 140.000,00
+| Administrador (R$ 25,00/Hora)  |   R$ 3.000,00       
+| Hardware                       |  R$ 0.000,00
+| 2 Iphones11                    |   R$ 6.400,00
+| 2 SamsungS22                   |   R$ 10.800,00
+| 1 Ipad Pro                     |   R$ 9.400,00
+| 1 Samsung  Galax tab 8         |   R$ 4.800,00
+| 6 notebook                     |   R$ 36.000,00
+| Especialização Profissional    |   R$ 1.400,00
+| Cursos e treinamentos          |   R$ 100.000,00
+| Licenças de Softwares          |   R$ 50.000,00
+| **Total**                      |   **R$ 386.800,00**
