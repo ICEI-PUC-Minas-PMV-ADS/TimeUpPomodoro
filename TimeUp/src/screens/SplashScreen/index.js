@@ -1,6 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet,  View } from 'react-native';
-import {CustomText, Logo} from '../../components'
+import { Logo} from '../../components'
+
+
 
 export const SplashScreen = () => {
   return (
@@ -10,6 +12,7 @@ export const SplashScreen = () => {
     </View>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {

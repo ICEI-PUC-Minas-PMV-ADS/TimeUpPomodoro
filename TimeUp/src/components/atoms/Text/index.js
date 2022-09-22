@@ -1,22 +1,13 @@
 import { Children } from 'react';
-import {  StyleSheet, Text } from 'react-native';
+import {Text}  from './styles';
 
 
-export const CustomText = ({Children}) => {
+export const CustomText = ({Children, color}) => {
 return (
-    <Text style={styles.tituleText}>
+    <CustomText color = {color} >
         {Children}
-    </Text>
+    </CustomText>
 )
 }
 
 
-const styles = StyleSheet.create({
-    tituleText: {
-      flex: 1,
-      backgroundColor: '#F74F43',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-  
-  });
