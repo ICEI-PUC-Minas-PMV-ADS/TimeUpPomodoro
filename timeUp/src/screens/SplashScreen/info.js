@@ -1,8 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet,  View , SafeAreaView,  Text, Image, Button 
+import { StyleSheet,  View , SafeAreaView,  Text, Image, Button, Alert
   } from 'react-native';
-import { LogoInfo, ComponentInfo} from '../../components/atoms/LogoInfo/index'
-
+import { LogoInfo} from '../../components/atoms/LogoInfo/index'
+import { Image1 }from '../../../assets/image1.png'
+import { Image2 }from '../../../assets/image2.png'
 
 
 
@@ -14,12 +15,20 @@ export const HelperScreen = () => {
       <Text style={styles.Text}>
               Vamos construir uma rotina
          mais saudável?</Text>
-         <ComponentInfo/>
-       
+         
+         <Button style={styles.button}
+                
+                title="Next"
+                onPress={() => Alert.alert(
+                    'Its GeeksforGeeks !')}
+           />
+           
     </View>
-   
-  );
-}
+  
+                )}
+
+
+  
 
 const styles = StyleSheet.create({
     container: {
@@ -31,27 +40,37 @@ const styles = StyleSheet.create({
         width: 160,
         height: 169,
         left: 127,
-        top: 218,
-        border: '1px solid',
+        top: 120,
+        
     },
 
     Text:{
-position: 'absolute',
-width: 280,
-height: 130,
-left: -60,
-top: 250,
+      position: 'absolute',
+      width: 280,
+      height: 130,
+      left: -60,
+      top: 180,      
+      fontSize: 30,
+      lineHeight: 36,
+      display:"flex",
+      alignItems: 'center',
+      justifyContent:'center',
+      color: '#6C5492',
+      flex: 1,
+      textAlign: 'center',
 
-fontFamily:'Poppins',
-fontSize: 30,
-lineHeight: 36,
-display:"flex",
-alignItems: 'center',
-justifyContent:'center',
-color: '#6C5492',
-flex: 1,
+    },
+    button: {
+      
+        flex: 1,
+        position: 'nonabsolute',
+          backgroundColor: '#',
+          alignItems: 'center',
+          justifyContent: 'center',
+          display:"flex",
+          top: 10,
 
-
-    }
+    },
+   
 
   });
