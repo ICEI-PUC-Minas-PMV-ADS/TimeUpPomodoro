@@ -9,10 +9,16 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo-google-fonts/poppins": "^0.2.2",
+    "bootstrap": "^5.2.1",
     "expo": "~46.0.9",
+    "expo-app-loading": "^2.1.0",
+    "expo-font": "^10.2.1",
     "expo-status-bar": "~1.4.0",
     "react": "18.0.0",
-    "react-native": "0.69.5"
+    "react-bootstrap": "^2.5.0",
+    "react-native": "0.69.5",
+    "react-native-bootstrap-buttons": "^0.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9"
