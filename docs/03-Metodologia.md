@@ -63,7 +63,7 @@ Já as ferramentas empregadas no projeto e suas respectivas funções são:
 
 |Função     |Ferramentas          | Justificativa|
 |-----------|---------------------|---------------|
-|Ferramenta de repositório e documentação | [Github](https://github.com) | A ferramenta foi escolhida por ter modelos do curso, bem como uma integração robusta com boards de acompanhamento de projetos, facilitando a gestão de processos|
+|Ferramenta de repositório e documentação | [Github](https://github.com/ICEI-PUC-Minas-PMV-ADS/TimeUpPomodoro) | A ferramenta foi escolhida por ter modelos do curso, bem como uma integração robusta com boards de acompanhamento de projetos, facilitando a gestão de processos|
 |Editor de código |Visual Studio Code | Foi escolhido por sua integração com o sistema de versão, bem como extensões que agilizam o desenvolvimento de uma aplicação |
 |Ferramentas de comunicação |Github, Microsoft Teams, WhatsApp | Foram ferramentas escolhidas por conveniência: conexão direta ao código, contato com o professor e demais membros e acesso diário - nessa ordem. |
 |Ferramentas de diagramação |Figma | Foi escolhida por seus recursos de wireframing bem como prototipagem de telas. |
