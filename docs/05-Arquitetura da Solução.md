@@ -4,6 +4,9 @@
 
 Nesta seção, apresentaremos os detalhes técnicos da solução criada pela equipe, tratando dos componentes que fazem parte da solução e do seu ambiente de hospedagem.
 
+![02-mob-arch](https://user-images.githubusercontent.com/90660755/192877041-2c1ca9d0-b5d0-4ae2-a0ac-20479c7d239f.png)
+
+
 ## Diagrama de Classes
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
