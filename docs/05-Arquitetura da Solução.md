@@ -11,9 +11,8 @@ Nesta seção, apresentaremos os detalhes técnicos da solução criada pela equ
 
 O diagrama de classes a seguir ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
-![Classe UML](https://user-images.githubusercontent.com/90660755/192877363-a5f7b33d-30bf-4fd1-a1dd-fe92df653bb7.jpeg)
 
-
+![Classe UML](https://user-images.githubusercontent.com/90660755/192915948-ef841054-497b-4228-a123-8529e7684c4e.jpeg)
 
 
 ## Modelo ER
@@ -22,7 +21,7 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER”.
 
-![Fluxogramas](https://user-images.githubusercontent.com/90660755/192892448-0c7b2bd0-e1ed-4a44-9a99-af92d519d882.jpeg)
+![Fluxogramas](https://user-images.githubusercontent.com/90660755/192915987-6197ebd3-65a2-49af-ae20-80be7022781e.jpeg)
 
 
 ## Esquema Relacional
