@@ -58,5 +58,5 @@ Explique como a hospedagem e o lançamento da plataforma foi feita.
 
 Será averiguado se o público-alvo para qual a aplicação móvel foi oferecida está satisfeito com o produto. 
 
-A segurança será tradada com muita seriedade pelos desenvolvedores dessa aplicação mobile, afinal, são eles os grandes responsáveis pelas informações inseridas pelos usuários nesses sistemas.
+A segurança será tradada com muita seriedade pelos desenvolvedores dessa aplicação mobile, afinal, são eles os grandes responsáveis pelas informações inseridas pelos usuários no sistema.
 
