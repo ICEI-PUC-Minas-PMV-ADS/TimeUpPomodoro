@@ -60,3 +60,7 @@ Será averiguado se o público-alvo para qual a aplicação móvel foi oferecida
 
 A segurança será tradada com muita seriedade pelos desenvolvedores dessa aplicação mobile, afinal, são eles os grandes responsáveis pelas informações inseridas pelos usuários no sistema.
 
+### Confiabilidade
+
+Será analisado se a aplicação apresenta algum tipo de falha durante sua execução. Ou ainda se ocorre algum comportamento inesperado durante seu funcionamento após alguma modificação.
+
