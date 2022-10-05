@@ -74,5 +74,13 @@ A praticidade do uso do aplicativo é um dos pilares para uma experiência praze
 
 Será avaliada a relação entre a performance do software e os mecanismos utilizados. O software apresentará funcionalidades que são auto explicativas. Em relação a Lei Geral de Proteção de Dados será analisado se osoftware está em conformidade com a mesma.
 
+### Manutenabilidade
+
+Testaremos se o software apresenta lentidão durante o uso. Se tratando da o	reusabilidade da aplicação significará reduzir custos e tempo no processo de desenvolvimento, aumentar a qualidade, entre outras diversas vantagens.
+
+### Portabilidade:
+
+Por fim a portabilidade será definida através da capacidade da aplicação  ser facilmente transportável ou seja se é capaz de executar todas as suas funções em diferentes dispositivos. Usabilidade em dispositivo móvel deve ser utilizável por tipos de pessoas diferentes em diversos ambientes
+
 
 
