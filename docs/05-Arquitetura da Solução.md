@@ -51,3 +51,12 @@ Explique como a hospedagem e o lançamento da plataforma foi feita.
 > - [Programação colaborativa com Repl.it](https://repl.it/)
 > - [Getting Started with Heroku](https://devcenter.heroku.com/start)
 > - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+
+## Qualidade de Software
+
+### Adequação funcional
+
+Será averiguado se o público-alvo para qual a aplicação móvel foi oferecida está satisfeito com o produto. 
+
+A segurança será tradada com muita seriedade pelos desenvolvedores dessa aplicação mobile, afinal, são eles os grandes responsáveis pelas informações inseridas pelos usuários nesses sistemas.
+
