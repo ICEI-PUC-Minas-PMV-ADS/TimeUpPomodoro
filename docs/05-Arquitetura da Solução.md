@@ -38,7 +38,7 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 - Plataforma para hospedagem do site: Heroku
 - Plataforma para hospedagem dos arquivos: GitHub
 - Ferramenta para crição de template: Figma
-- Ferramenta para organização do grupo: Notion
+- Ferramenta para organização do grupo: Planner
 - Ferramenta para reuniões do grupo: Microsof Teams
 
 ## Hospedagem
