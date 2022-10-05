@@ -70,3 +70,9 @@ Será analisado se a aplicação apresenta algum tipo de falha durante sua execu
 
 A praticidade do uso do aplicativo é um dos pilares para uma experiência prazerosa para o usuário. A apreensibilidade será para avaliar a dificuldade para execução de determinadas atividades no decorrer do uso da aplicação.
 
+### Eficiência
+
+Será avaliada a relação entre a performance do software e os mecanismos utilizados. O software apresentará funcionalidades que são auto explicativas. Em relação a Lei Geral de Proteção de Dados será analisado se osoftware está em conformidade com a mesma.
+
+
+
