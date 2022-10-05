@@ -54,6 +54,8 @@ Explique como a hospedagem e o lançamento da plataforma foi feita.
 
 ## Qualidade de Software
 
+O grupo definiu as sub-características para o projeto TimeUP seguindo os fundamentos descriminados na norma técnica ISO/IEC 25010, seguem os itens para a avaliação da qualidade de software.
+
 ### Adequação funcional
 
 Será averiguado se o público-alvo para qual a aplicação móvel foi oferecida está satisfeito com o produto. 
