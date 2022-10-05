@@ -32,12 +32,12 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 ## Tecnologias Utilizadas
 
-•	Linguagens utlizadas para desenvolver o projeto: React Native
-•	IDEs de desenvolvimento: Visual Studio Code
-•	Plataforma para hospedagem do site: Heroku
-•	Plataforma para hospedagem dos arquivos: GitHub
-•	Plataforma para organização do grupo: Notion
-• Ferramenta para crição de template: Figma
+-	Linguagens utlizadas para desenvolver o projeto: React Native
+-	IDEs de desenvolvimento: Visual Studio Code
+- Plataforma para hospedagem do site: Heroku
+- Plataforma para hospedagem dos arquivos: GitHub
+- Plataforma para organização do grupo: Notion
+- Ferramenta para crição de template: Figma
 
 ## Hospedagem
 
