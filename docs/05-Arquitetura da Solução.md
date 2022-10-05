@@ -54,7 +54,7 @@ Explique como a hospedagem e o lançamento da plataforma foi feita.
 
 ## Qualidade de Software
 
-O grupo definiu as sub-características para o projeto TimeUP seguindo os fundamentos descriminados na norma técnica ISO/IEC 25010, seguem os itens para a avaliação da qualidade de software.
+O grupo algumas sub-características para o projeto TimeUP seguindo os fundamentos descriminados na norma técnica ISO/IEC 25010, seguem os itens para a avaliação da qualidade de software.
 
 ### Adequação funcional
 
@@ -65,4 +65,8 @@ A segurança será tradada com muita seriedade pelos desenvolvedores dessa aplic
 ### Confiabilidade
 
 Será analisado se a aplicação apresenta algum tipo de falha durante sua execução. Ou ainda se ocorre algum comportamento inesperado durante seu funcionamento após alguma modificação.
+
+### Usabilidade
+
+A praticidade do uso do aplicativo é um dos pilares para uma experiência prazerosa para o usuário. A apreensibilidade será para avaliar a dificuldade para execução de determinadas atividades no decorrer do uso da aplicação.
 
