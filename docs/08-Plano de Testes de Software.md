@@ -1,19 +1,66 @@
 # Plano de Testes de Software
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>
 
-Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
 
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
- 
-## Ferramentas de Testes (Opcional)
+| **Caso de Teste**  | Pagina Inicial                                                                                                                                                                                                                                                                  |
+| ------------------- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Requisitos Associados** | A Pagina Inicial do app deverá constar os 8 Requisitos funcionais estipulados na tabelo de requisitos(RF-01, RF-05, RF-06, RF-07, RF-08, RF-09, RF-14 e RF16) para que o Caso de Teste "Pagina Inicial" seja completado com sucesso. |
+|  **Objetivo do Teste**  | Verificar se a pagina inicial da aplicação corresponde aos requsitos.                                                                                                                                               |
+|   | **Passos Pricipais**                                                                                                                                                                                                                                                             
+||1) Acessar o Aplicativo "Pomodoro".
+||2) Realizar o login com o acesso de preferencia do usuário. 
+||3) Visualizar a página principal.   |
+|  **Critérios de Êxito**  | Ao clicar em Login, deverá ser acessado a pagina inicial do aplicativo.                                                                                                                                                                                                     |
+|   | **RF-01**                                                                                                                                                                                                                                                             
+||1) Na tela principal do app, verificar se há os mostradores de progresso.  |
+|  **Critérios de Êxito**  | Na pagina principal os mostradores de progresso estarem condizentes com o uso do usuário. |  
+|   | **RF-05**                                                                                                                                                                                                                                                             
+||1) Na tela principal do app, verificar se os mostradores de progresso estão condizentes com o calculo Horas trabalhadas/Meta de horas.  |
+|  **Critérios de Êxito**  | Na pagina principal os mostradores de progresso estarem condizentes com o calculo acima.  
+|   | **RF-06**                                                                                                                                                                                                                                                             
+||1) Na tela principal do app, verificar se os mostradores de progresso estão condizentes com o calculo Horas trabalhadas/Horas programadas para a tarefa.  |
+|  **Critérios de Êxito**  | Na pagina principal os mostradores de progresso estarem condizentes com o calculo acima.  
+|   | **RF-07**                                                                                                                                                                                                                                                             
+||1) Na tela principal do app, verificar se os mostradores de proporção estão condizentes com a meta estipulada pelo usuário para Foco total, Distração e Pausas.  |
+|  **Critérios de Êxito**  | Na pagina principal os mostradores de progresso estarem condizentes com as metas estipuladas pelo usuário.
+|   | **RF-08**                                                                                                                                                                                                                                                             
+||1) Na tela principal do app, clicar no botão "+".  
+||2) Selecionaro "novo projeto".
+|  **Critérios de Êxito**  | Na pagina principal o novo projeto estar criado adequadamente. |
+|   | **RF-09**                                                                                                                                                                                                                                                             
+||1) Na tela principal do app, analisar se há um countdonw para conclusao de cada projeto.  
+|  **Critérios de Êxito**  | Na pagina principal haver o countdow para conclusao do projeto criado. |
+|   | **RF-14**                                                                                                                                                                                                                                                             
+||1) Na tela principal do app, verificar se todas a funcionalidades dispostas na tela são interativas.  
+||2) Selecionaro "novo projeto".
+|  **Critérios de Êxito**  | Na pagina principal verificar se todas as funcionalidades estão responsivas a interação do usuário. |
+|   | **RF-16**                                                                                                                                                                                                                                                             
+||1) Na tela principal do app, verificar se possui um botão de acesso rapido ao bloco de notas e se o mesmo esta funcionando perfeitamente.  
+|  **Critérios de Êxito**  | Se pela pagina principal o usuario acessa o bloco de notas apenas com um clique. |
 
-Comente sobre as ferramentas de testes utilizadas.
- 
-> **Links Úteis**:
-> - [IBM - Criação e Geração de Planos de Teste](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Práticas e Técnicas de Testes Ágeis](http://assiste.serpro.gov.br/serproagil/Apresenta/slides.pdf)
-> -  [Teste de Software: Conceitos e tipos de testes](https://blog.onedaytesting.com.br/teste-de-software/)
-> - [Criação e Geração de Planos de Teste de Software](https://www.ibm.com/developerworks/br/local/rational/criacao_geracao_planos_testes_software/index.html)
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
-> - [UX Tools](https://uxdesign.cc/ux-user-research-and-user-testing-tools-2d339d379dc7)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
