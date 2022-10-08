@@ -11,9 +11,7 @@ Nesta seção, apresentaremos os detalhes técnicos da solução criada pela equ
 
 O diagrama de classes a seguir ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
-
-![Classe UML](https://user-images.githubusercontent.com/90660755/192915948-ef841054-497b-4228-a123-8529e7684c4e.jpeg)
-
+![Diagrama de classes](https://user-images.githubusercontent.com/90660755/194677051-c22ec86a-208c-4908-a8aa-d64054d2ecad.jpeg)
 
 ## Modelo ER
 
