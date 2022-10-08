@@ -161,14 +161,14 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 ## Tecnologias Utilizadas
 
--	Linguagens utilizadas para desenvolver o projeto: HTML, CSS, JAVASCRIPT
--	FrameWork utilizado para desenvolver o projeto: React Native
+-	Linguagens utlizadas para desenvolver o projeto: HTML, CSS, JAVASCRIPT
+-	FrameWork utlizado para desenvolver o projeto: React Native
 -	IDEs de desenvolvimento: Visual Studio Code
 - Plataforma para hospedagem do site: Heroku
 - Plataforma para hospedagem dos arquivos: GitHub
 - Ferramenta para crição de template: Figma
 - Ferramenta para organização do grupo: Planner
-- Ferramenta para reuniões do grupo: Microsoft Teams
+- Ferramenta para reuniões do grupo: Microsof Teams
 
 ## Hospedagem
 
@@ -180,3 +180,36 @@ Explique como a hospedagem e o lançamento da plataforma foi feita.
 > - [Programação colaborativa com Repl.it](https://repl.it/)
 > - [Getting Started with Heroku](https://devcenter.heroku.com/start)
 > - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+
+## Qualidade de Software
+
+O grupo optou por priorizar algumas sub-características para o projeto TimeUP seguindo os fundamentos descriminados na norma técnica ISO/IEC 25010, seguem os itens para a avaliação da qualidade de software.
+
+### Adequação funcional
+
+Será averiguado se o público-alvo para qual a aplicação móvel foi oferecida está satisfeito com o produto. 
+
+A segurança será tradada com muita seriedade pelos desenvolvedores dessa aplicação mobile, afinal, são eles os grandes responsáveis pelas informações inseridas pelos usuários no sistema.
+
+### Confiabilidade
+
+Será analisado se a aplicação apresenta algum tipo de falha durante sua execução. Ou ainda se ocorre algum comportamento inesperado durante seu funcionamento após alguma modificação.
+
+### Usabilidade
+
+A praticidade do uso do aplicativo é um dos pilares para uma experiência prazerosa para o usuário. A apreensibilidade será para avaliar a dificuldade para execução de determinadas atividades no decorrer do uso da aplicação.
+
+### Eficiência
+
+Será avaliada a relação entre a performance do software e os mecanismos utilizados. O software apresentará funcionalidades que são auto explicativas. Em relação a Lei Geral de Proteção de Dados será analisado se osoftware está em conformidade com a mesma.
+
+### Manutenabilidade
+
+Testaremos se o software apresenta lentidão durante o uso. Se tratando da o	reusabilidade da aplicação significará reduzir custos e tempo no processo de desenvolvimento, aumentar a qualidade, entre outras diversas vantagens.
+
+### Portabilidade:
+
+Por fim a portabilidade será definida através da capacidade da aplicação  ser facilmente transportável ou seja se é capaz de executar todas as suas funções em diferentes dispositivos. Usabilidade em dispositivo móvel deve ser utilizável por tipos de pessoas diferentes em diversos ambientes
+
+
+
