@@ -77,6 +77,13 @@ Não faz sentido, portanto, que ele gaste muito tempo configurando o serviço. A
 
 O objetivo é criar um produto simples e rápido, onde o tempo de instalação e configurações de uso fiquem dentro da margem de aceite (MA) estabelecida pela meta.
 
+
+| Classificação <br/>de Indicadores | Métrica      |
+| ------------- |--------------|
+| Viável  | Dentro da Meta |
+| Aceitável  | Meta + MA |
+| Inviável  | Acima de Meta + MA |
+
 | Evento                    | Descrição                                                        | Meta       | Margem de Aceite (MA) |
 |---------------------------|------------------------------------------------------------------|------------|-----------------------|
 | Instalação                | Período entre a compra do produto até a completa instalação (**) | 5 minutos  | 3 minutos             |
@@ -84,11 +91,16 @@ O objetivo é criar um produto simples e rápido, onde o tempo de instalação e
 | Instalação e Configuração | até 10 minutos                                                   | 10 minutos | 3 minutos             |
 
 
-| Classificação <br/>de Indicadores | Métrica      |
-| ------------- |--------------|
-| Viável  | Dentro da Meta |
-| Aceitável  | Meta + MA |
-| Inviável  | Acima de Meta + MA |
+| Metas de Negócio | Meta      |      MA      | 
+| ------------- |--------------|--------------|      
+| downloads  | aumento de 35% em downloads no app |    3.0   |
+| receita  | aumento de 25% na receita de anúncios no app |     3.0  |
+| retenção  | nenhuma redução na retenção |   3.0    |
+
+Para acompanhar as metas de negócio, o grupo irá integrar o app ao Google Analytics para Firebase, que permite criar um registro quando os usuários abrem o app. O núcleo do Firebase é o Google Analytics, uma solução de análise ilimitada disponível sem custos financeiros. O Analytics se integra a recursos do Firebase e oferece geração ilimitada de relatórios para até 500 eventos distintos que podem ser definidos usando o SDK do Firebase. Com os relatórios do Analytics, o grupo poderá compreender a compenhar claramente o comportamento dos usuários, podendo assim, obter melhores decisões sobre otimizações de desempenho do app.
+
+![image](https://user-images.githubusercontent.com/78277341/194724407-77a13510-ee1a-4743-baae-b1dc860d8f09.png)
+
 
 Para alcançar as metas, o grupo utilizará o método **_SMART_**, estabelecendo-se 5 indicadores de desempenho:
 
