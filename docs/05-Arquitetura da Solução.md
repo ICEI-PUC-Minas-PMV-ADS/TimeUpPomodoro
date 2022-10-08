@@ -41,7 +41,7 @@ Para reforçar o comprometimento com o gerenciamento dos processos, iremos reali
 5. **Monitoriamento e Controle** = a execução do processo será acompanhada. Não só observar, mas é necessário também agir no sentido de controlar as interferências: medições, comparações, indicadores, *Dashboards*, mapas, cartões, etc. Tudo isso para garantir o alinhamento com as estratégias estabelecidas pelo grupo.
 6. **Refinamento** = Os ajustes, aperfeiçoar a implementação. Por mais que seja bem planejado, o processo muitas vezes necessita de refinamentos. O refinamento fecha o ciclo BPM de gerenciamento de processos de negócios.
 
-A imagem abaixo demonstra o monitoramento e controle dos 6 elementos, gerados através de dados, registrados pelos membros, de suas respectivas atividades:
+A imagem abaixo demonstra o monitoramento e controle dos 6 elementos, gerados através de dados no Planner, registrados pelos membros, de suas respectivas atividades:
 
 ![image](https://user-images.githubusercontent.com/78277341/194153089-17408fe4-229e-4fc3-911f-f0ab0736ab9e.png)
 
