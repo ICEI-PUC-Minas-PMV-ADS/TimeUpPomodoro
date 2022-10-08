@@ -19,14 +19,15 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER”.
 
-![Fluxogramas](https://user-images.githubusercontent.com/90660755/192915987-6197ebd3-65a2-49af-ae20-80be7022781e.jpeg)
+![Modelo ER](https://user-images.githubusercontent.com/90660755/194680468-5db3694f-3b3b-41fb-b649-5cc2fc31fe3d.jpeg)
 
 
 ## Esquema Relacional
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa. Segue abaixo a representação do Modelo ER:
 
-![E R Pomodoro](https://user-images.githubusercontent.com/90660755/194131634-660ad0fe-55f5-402c-b51b-397e5a749fc4.jpeg)
+![Esquema Relacional](https://user-images.githubusercontent.com/90660755/194680481-7f0a8f09-db71-435f-8035-b5ccfc53b9bd.jpeg)
+
 
 ## Tecnologias Utilizadas
 
