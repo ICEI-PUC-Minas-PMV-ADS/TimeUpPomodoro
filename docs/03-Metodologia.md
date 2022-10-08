@@ -62,11 +62,12 @@ O grupo utilizou um board no [GitHub Projects](https://github.com/ICEI-PUC-Minas
 Segue abaixo, os modelos de soluções adotadas.
 
 No [GitHub Projects](https://github.com/ICEI-PUC-Minas-PMV-ADS/Pomodoro/projects?type=classic), o quadro Kanban é atualizado após a realização de commits associados a tarefas nas sprints, demonstrado na imagem:
-![GitProjects](https://github.com/ICEI-PUC-Minas-PMV-ADS/Pomodoro/blob/main/docs/img/kanban.jpg)
+
+![GitProjects](https://github.com/ICEI-PUC-Minas-PMV-ADS/TimeUpPomodoro/blob/Mariane-Serapi%C3%A3o/docs/img/gitProjects.png?raw=true)
 
 Já o [Microsoft Planner: ](https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=ca2f5986-86cc-4dbf-9c21-b586a491ced9&planId=h_Q9NmwXaUijvknhEUY8bWQAEcmA) permite o gerenciamento de pessoal, conforme explicitado na seção anterior.
 
-![Tarefas listadas no Planner](https://github.com/ICEI-PUC-Minas-PMV-ADS/Pomodoro/blob/main/docs/img/Planner%20-%20%C3%A9picos.png)
+![Tarefas listadas no Planner](https://github.com/ICEI-PUC-Minas-PMV-ADS/TimeUpPomodoro/blob/Mariane-Serapi%C3%A3o/docs/img/microsoftPlanner.png?raw=true)
 
 ### Ferramentas
 
