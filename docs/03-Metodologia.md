@@ -53,7 +53,7 @@ A divisão de papéis entre os membros é:
 
 ### Processo
 
-O grupo utilizou um board no [GitHub Projects](https://github.com/ICEI-PUC-Minas-PMV-ADS/Pomodoro/projects?type=classic) e o [Microsoft Planner](https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=ca2f5986-86cc-4dbf-9c21-b586a491ced9&planId=h_Q9NmwXaUijvknhEUY8bWQAEcmA) a fim de acompanhar andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. Foram consideradas as seguintes listas:
+O grupo utilizou um board no [GitHub Projects](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/182/views/1) e o [Microsoft Planner](https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=ca2f5986-86cc-4dbf-9c21-b586a491ced9&planId=h_Q9NmwXaUijvknhEUY8bWQAEcmA) a fim de acompanhar andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. Foram consideradas as seguintes listas:
 
 - **Não iniciada:** para tarefas a serem desenvolvidas dentro da sprint atual.
 - **Em andamento:** para tarefas em processo de desenvolvimento dentro da sprint atual.
@@ -61,7 +61,7 @@ O grupo utilizou um board no [GitHub Projects](https://github.com/ICEI-PUC-Minas
 
 Segue abaixo, os modelos de soluções adotadas.
 
-No [GitHub Projects](https://github.com/ICEI-PUC-Minas-PMV-ADS/Pomodoro/projects?type=classic), o quadro Kanban é atualizado após a realização de commits associados a tarefas nas sprints, demonstrado na imagem:
+No [GitHub Projects](https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/182/views/1), o quadro Kanban é atualizado após a realização de commits associados a tarefas nas sprints, demonstrado na imagem:
 
 ![GitProjects](https://github.com/ICEI-PUC-Minas-PMV-ADS/TimeUpPomodoro/blob/Mariane-Serapi%C3%A3o/docs/img/gitProjects.png?raw=true)
 
