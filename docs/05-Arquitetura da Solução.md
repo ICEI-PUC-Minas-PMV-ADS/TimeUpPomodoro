@@ -161,14 +161,14 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 ## Tecnologias Utilizadas
 
--	Linguagens utlizadas para desenvolver o projeto: HTML, CSS, JAVASCRIPT
--	FrameWork utlizado para desenvolver o projeto: React Native
+-	Linguagens utilizadas para desenvolver o projeto: HTML, CSS, JAVASCRIPT
+-	FrameWork utilizado para desenvolver o projeto: React Native
 -	IDEs de desenvolvimento: Visual Studio Code
 - Plataforma para hospedagem do site: Heroku
 - Plataforma para hospedagem dos arquivos: GitHub
 - Ferramenta para crição de template: Figma
 - Ferramenta para organização do grupo: Planner
-- Ferramenta para reuniões do grupo: Microsof Teams
+- Ferramenta para reuniões do grupo: Microsoft Teams
 
 ## Hospedagem
 
