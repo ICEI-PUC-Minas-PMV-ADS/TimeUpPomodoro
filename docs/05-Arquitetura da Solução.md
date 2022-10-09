@@ -11,9 +11,7 @@ Nesta seção, apresentaremos os detalhes técnicos da solução criada pela equ
 
 O diagrama de classes a seguir ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
-
-![Classe UML](https://user-images.githubusercontent.com/90660755/192915948-ef841054-497b-4228-a123-8529e7684c4e.jpeg)
-
+![Diagrama de classes](https://user-images.githubusercontent.com/90660755/194677051-c22ec86a-208c-4908-a8aa-d64054d2ecad.jpeg)
 
 ## Processos e suas Respectivas Atividades
 
@@ -150,66 +148,51 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER”.
 
-![Fluxogramas](https://user-images.githubusercontent.com/90660755/192915987-6197ebd3-65a2-49af-ae20-80be7022781e.jpeg)
+![Modelo ER](https://user-images.githubusercontent.com/90660755/194680468-5db3694f-3b3b-41fb-b649-5cc2fc31fe3d.jpeg)
 
 
 ## Esquema Relacional
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa. Segue abaixo a representação do Modelo ER:
 
-![E R Pomodoro](https://user-images.githubusercontent.com/90660755/194131634-660ad0fe-55f5-402c-b51b-397e5a749fc4.jpeg)
+![Esquema Relacional](https://user-images.githubusercontent.com/90660755/194680481-7f0a8f09-db71-435f-8035-b5ccfc53b9bd.jpeg)
 
-## Tecnologias Utilizadas
+## Qualidade de Software 
 
--	Linguagens utilizadas para desenvolver o projeto: HTML, CSS, JAVASCRIPT
--	FrameWork utilizado para desenvolver o projeto: React Native
--	IDEs de desenvolvimento: Visual Studio Code
-- Plataforma para hospedagem do site: Heroku
-- Plataforma para hospedagem dos arquivos: GitHub
-- Ferramenta para crição de template: Figma
-- Ferramenta para organização do grupo: Planner
-- Ferramenta para reuniões do grupo: Microsoft Teams
-
-## Hospedagem
-
-Explique como a hospedagem e o lançamento da plataforma foi feita.
-
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
-
-## Qualidade de Software
-
-O grupo optou por priorizar algumas sub-características para o projeto TimeUP seguindo os fundamentos descriminados na norma técnica ISO/IEC 25010, seguem os itens para a avaliação da qualidade de software.
+Se tratando de qualidade de software, podemos listar oito características e trinta subcaracterísticas, seguindo os fundamentos descriminados na norma técnica ISO/IEC 25010, seguem os itens para a avaliação da qualidade mais relevantes para este projeto.
 
 ### Adequação funcional
 
-Será averiguado se o público-alvo para qual a aplicação móvel foi oferecida está satisfeito com o produto. 
+O público-alvo para qual a aplicação móvel será ofertada são estudantes e profissionais que precisam gerenciar melhor o seu tempo e que utilizem computadores e dispositivos móveis conectados à internet como ferramentas de trabalho e estudo de maneira frequente, através de pesquisas de satisfação será averiguado se a aplicação atende as expectativas dos usuários. 
 
-A segurança será tradada com muita seriedade pelos desenvolvedores dessa aplicação mobile, afinal, são eles os grandes responsáveis pelas informações inseridas pelos usuários no sistema.
+### Segurança de acesso
+
+Optamos por tratar a segurança com muita seriedade pois nós desenvolvedores dessa aplicação somos os grandes responsáveis pelo sigilo das informações inseridas pelos usuários no sistema.
 
 ### Confiabilidade
 
-Será analisado se a aplicação apresenta algum tipo de falha durante sua execução. Ou ainda se ocorre algum comportamento inesperado durante seu funcionamento após alguma modificação.
+Ao longo do desenvolvimento do projeto a aplicação será testada por nossos desenvolvedores para identificar algum tipo de falha durante sua execução. Ou ainda se ocorre algum comportamento inesperado durante seu funcionamento após alguma modificação.
 
 ### Usabilidade
 
-A praticidade do uso do aplicativo é um dos pilares para uma experiência prazerosa para o usuário. A apreensibilidade será para avaliar a dificuldade para execução de determinadas atividades no decorrer do uso da aplicação.
+Durante as reuniões em grupo foi discutido a praticidade do uso do aplicativo e chegamos à conclusão de que um design simples, porém funcional é um dos pilares para uma experiência prazerosa para o usuário. 
+
+### Apreensibilidade
+
+O software apresentará telas de tutorias para evitar ao máximo possíveis dificuldades na execução de determinadas tarefas ao longo de toda a experiência que o usuário tiver enquanto estiver fazendo uso da aplicação.
 
 ### Eficiência
 
-Será avaliada a relação entre a performance do software e os mecanismos utilizados. O software apresentará funcionalidades que são auto explicativas. Em relação a Lei Geral de Proteção de Dados será analisado se osoftware está em conformidade com a mesma.
+Será avaliada a relação entre a performance do software e os mecanismos utilizados como login, tutorial, contador, alarme e o tempo mínimo de resposta para cada funcionalidade do software e máxima velocidade de execução de cada tarefa.  
 
 ### Manutenabilidade
 
-Testaremos se o software apresenta lentidão durante o uso. Se tratando da o	reusabilidade da aplicação significará reduzir custos e tempo no processo de desenvolvimento, aumentar a qualidade, entre outras diversas vantagens.
+A reusabilidade da aplicação significará reduzir custos e tempo no processo de desenvolvimento, aumentar a qualidade, entre outras diversas vantagens. Como nossa aplicação será desenvolvida em React Native, será possível reutilizar componentes para se obter agilidade no desenvolvimento.
 
-### Portabilidade:
 
-Por fim a portabilidade será definida através da capacidade da aplicação  ser facilmente transportável ou seja se é capaz de executar todas as suas funções em diferentes dispositivos. Usabilidade em dispositivo móvel deve ser utilizável por tipos de pessoas diferentes em diversos ambientes
+
+Por fim a portabilidade será fundamental em nossa aplicação pois ela abrange um público variado e será definida através da capacidade da aplicação ser facilmente transportável, ou seja, se é capaz de executar todas as suas funções em diferentes sistemas operacionais, como Android na versão 9.0 e IOS na versão 10.0. Nosso objetivo é que nossa aplicação possa ser utilizada por tipos de pessoas diferentes em diversos ambientes.
+
 
 
 
