@@ -159,7 +159,8 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 ## Qualidade de Software 
 
-Se tratando de qualidade de software, podemos listar oito características e trinta subcaracterísticas, seguindo os fundamentos descriminados na norma técnica ISO/IEC 25010, seguem os itens para a avaliação da qualidade mais relevantes para este projeto.
+O grupo definiu as sub-características para o projeto TimeUP seguindo os fundamentos descriminados na norma técnica ISO/IEC 25010, seguem os itens para a avaliação da qualidade de software.
+
 
 ### Adequação funcional
 
