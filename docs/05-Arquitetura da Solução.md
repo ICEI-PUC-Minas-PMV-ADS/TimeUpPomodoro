@@ -161,6 +161,7 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 O grupo definiu as sub-características para o projeto TimeUP seguindo os fundamentos descriminados na norma técnica ISO/IEC 25010, seguem os itens para a avaliação da qualidade de software.
 
+
 ### Adequação funcional
 
 O público-alvo para qual a aplicação móvel será ofertada são estudantes e profissionais que precisam gerenciar melhor o seu tempo e que utilizem computadores e dispositivos móveis conectados à internet como ferramentas de trabalho e estudo de maneira frequente, através de pesquisas de satisfação será averiguado se a aplicação atende as expectativas dos usuários. 
