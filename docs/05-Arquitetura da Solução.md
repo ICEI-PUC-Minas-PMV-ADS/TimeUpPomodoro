@@ -155,7 +155,7 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER�
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa. Segue abaixo a representação do Modelo ER:
 
-![Esquema Relacional](https://user-images.githubusercontent.com/90660755/194680481-7f0a8f09-db71-435f-8035-b5ccfc53b9bd.jpeg)
+
 
 ## Qualidade de Software 
 
