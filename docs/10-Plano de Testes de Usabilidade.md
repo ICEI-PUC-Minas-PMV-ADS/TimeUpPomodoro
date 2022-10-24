@@ -24,7 +24,7 @@ Abaixo demonstro em forma de tabela as formas dos testes de usabilidade:
 |Caso de teste 04     | CT 04 -  Adicionar meta |
 |-------|-------------------------
 |Objetivo do teste| Verificar se a meta pré definida para a atividade vai ser registreada.  |
-|Ações esperadas |	1) Acessar a aplicação. 2) Clicar em Cardápio. 3) Selecionar a meta para execução da atividade.|
+|Ações esperadas |	1) Acessar a aplicação. 2) Clicar em "Atividade". 3) Selecionar a meta para execução da atividade.|
 |Critérios de êxito| A meta deve ser registrada pelo app conforme criterios do usuário. |
 
 
