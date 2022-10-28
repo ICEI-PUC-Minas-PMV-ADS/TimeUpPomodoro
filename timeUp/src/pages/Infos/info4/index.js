@@ -19,7 +19,7 @@ export default function  Info3() {
          </Animatable.View>
          <TouchableOpacity
         style={styles.button}
-          >
+        onPress={() => navigation.navigate('Time')}>
           <Text style={styles.buttonText}>Play</Text>
         </TouchableOpacity>
     </View>
