@@ -8,6 +8,8 @@ import Info1 from '../pages/Infos/info1'
 import Info2 from '../pages/Infos/info2'
 import Info3 from '../pages/Infos/info3'
 import Info4 from '../pages/Infos/info4'
+import Time from '../pages/Timer'
+
 
 
 
@@ -17,7 +19,7 @@ const Stack = createNativeStackNavigator();
 export default function Routes(){
     return(
 
-        <Stack.Navigator>
+        <Stack.Navigator initialRouteName='Welcome'>
             <Stack.Screen
             name="Welcome"
             component={Welcome}
@@ -57,6 +59,14 @@ export default function Routes(){
             component={Info4}        
             options={{headerShown: false}}
             />
+            <Stack.Screen
+            name="Time"
+            component={Time}        
+            options={{headerShown: false}}
+            />
+           
         </Stack.Navigator>
+    
     )
+
 }

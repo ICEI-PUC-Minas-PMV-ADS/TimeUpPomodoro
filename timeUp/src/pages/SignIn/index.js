@@ -1,11 +1,16 @@
-import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native'
-import React from 'react'
-import * as Animatable from 'react-native-animatable'
+import { View, Text, StyleSheet, TextInput, TouchableOpacity, KeyboardAvoidingView } from 'react-native';
+import React from 'react';
+import * as Animatable from 'react-native-animatable';
 
-import {useNavigation} from '@react-navigation/native'
+import {useNavigation} from '@react-navigation/native';
+
+
 export default function  SignIn() {
   const navigation = useNavigation();
   return (
+    
+   
+    
     <View style={styles.container}>
       <Animatable.View animation="fadeInLeft" delay={500} style={styles.containerHeader}>
         <Text style={styles.message}> Bem-Vindo(a)</Text>
@@ -17,11 +22,11 @@ export default function  SignIn() {
       placeholder='Digite um email...' style={styles.input}
       />
       <Text style={styles.title}>Senha</Text>
-      <TextInput
-      placeholder='Digite sua senha...' style={styles.input}
+      <TextInput 
+      placeholder='Digite sua senha...'  secureTextEntry={true} style={styles.input}    
       />
       <TouchableOpacity style={styles.button}
-       onPress={() => navigation.navigate('Infos')}>
+      onPress={() => navigation.navigate('Info1')}>
         <Text  style={styles.buttonText}>Acessar</Text>
       </TouchableOpacity>
 
@@ -32,6 +37,7 @@ export default function  SignIn() {
 
       </Animatable.View>
     </View>
+   
   )
 }
 
