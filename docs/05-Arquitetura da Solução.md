@@ -160,6 +160,11 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 O arquivo modelo.sql contendo o script de criação da tabela do banco de dados do projetio TimeUp  está incluído dentro da pasta src\bd.
 
+Abaixo segue a representação do modelo físico:
+
+![modeloSql](https://user-images.githubusercontent.com/90660755/198830705-1df47cfc-e17c-408e-9320-e538d04b5044.png)
+
+
 ## Qualidade de Software 
 
 O grupo definiu as sub-características para o projeto TimeUP seguindo os fundamentos descriminados na norma técnica ISO/IEC 25010, seguem os itens para a avaliação da qualidade de software.
