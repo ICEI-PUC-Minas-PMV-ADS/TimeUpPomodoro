@@ -156,6 +156,14 @@ As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER�
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa. Segue abaixo a representação do Modelo ER:
 ![Esquema Relacional](https://user-images.githubusercontent.com/90660755/194680481-7f0a8f09-db71-435f-8035-b5ccfc53b9bd.jpeg)
 
+## Modelo Físico
+
+O arquivo modelo.sql contendo o script de criação da tabela do banco de dados do projetio TimeUp  está incluído dentro da pasta src\bd.
+
+Abaixo segue a representação do modelo físico:
+
+![modeloSql](https://user-images.githubusercontent.com/90660755/198830705-1df47cfc-e17c-408e-9320-e538d04b5044.png)
+
 
 ## Qualidade de Software 
 
