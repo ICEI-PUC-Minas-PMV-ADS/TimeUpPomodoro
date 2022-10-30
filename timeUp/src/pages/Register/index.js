@@ -22,7 +22,7 @@ async function createUser(){
 
   await createUserWithEmailAndPassword(auth, email, password)
   .then(value => {
-    Alert.alert("Algo deu errado!","Cadastrado  realizado com sucesso!");
+    Alert.alert("Sucesso!","Cadastrado  realizado com sucesso!");
     navigation.navigate('SignIn')
   })
   .catch(error =>  Alert.alert("Algo deu errado!","Erro no Cadastrado!"));
