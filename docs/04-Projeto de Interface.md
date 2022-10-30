@@ -62,5 +62,6 @@ Caso o Login seja feito corretamente, o usuário irá acessar o tutorial, para q
 ### Tela de Cronometrar o tempo 
 Após logar no sistema, o cronômetro será apresentado e o usuário poderá iniciar a técnica pomodoro para racionalizar seu tempo de estudo, policiando o tempo de seus intervalos de descanso.
 
+
 ![image](https://user-images.githubusercontent.com/78277341/198858568-4801571c-9f65-43e1-bbf0-16aaf292577f.png)
 
