@@ -1,45 +1,80 @@
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, KeyboardAvoidingView } from 'react-native';
-import React from 'react';
+import { View, Text, StyleSheet, TextInput, TouchableOpacity, Button,  Alert} from 'react-native';
+import React, { useState} from 'react';
 import * as Animatable from 'react-native-animatable';
+import { useNavigation} from '@react-navigation/native';
+import {  signInWithEmailAndPassword} from 'firebase/auth';
+import { auth } from "../../firebase/config";
 
-import {useNavigation} from '@react-navigation/native';
+
 
 
 export default function  SignIn() {
   const navigation = useNavigation();
+  
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  function Login (){
+    if(email === '' || password === '')
+    {
+      Alert.alert('Algo deu errado!','Gentileza preencher todos os campos.');
+      return;
+    }
+  };
+async function login(){
+
+  await signInWithEmailAndPassword(auth, email, password)
+  .then(value => {
+    let user= value.user;
+    navigation.navigate('Infos', {idUser: user.uid})
+  })
+  .catch(error => Alert.alert("Algo deu errado!","Erro no Cadastrado!"));
+  return;
+
+}
   return (
     
-   
+      
     
     <View style={styles.container}>
       <Animatable.View animation="fadeInLeft" delay={500} style={styles.containerHeader}>
         <Text style={styles.message}> Bem-Vindo(a)</Text>
       </Animatable.View>
 
-      <Animatable.View animation="fadeInUp" style={styles.containerForm}> 
+     <Animatable.View animation="fadeInUp" style={styles.containerForm}> 
+    
       <Text style={styles.title}>Email</Text>
-      <TextInput
+      <TextInput value={email}
+      onChangeText={value => setEmail(value)}
       placeholder='Digite um email...' style={styles.input}
       />
       <Text style={styles.title}>Senha</Text>
-      <TextInput 
+      <TextInput value={password}
+      onChangeText={value => setPassword(value)}
       placeholder='Digite sua senha...'  secureTextEntry={true} style={styles.input}    
       />
+      
       <TouchableOpacity style={styles.button}
-      onPress={() => navigation.navigate('Info1')}>
-        <Text  style={styles.buttonText}>Acessar</Text>
+      onPress={() => login()}
+      onPressIn={Login}>
+        <Text  style={styles.buttonText}>Entrar</Text>
       </TouchableOpacity>
-
+     
+    
       <TouchableOpacity style={styles.buttonRegister}
        onPress={() => navigation.navigate('Register')}>
         <Text  style={styles.registerText}>Não possui um conta? Cadastre-se</Text>
+      
       </TouchableOpacity>
+    
 
       </Animatable.View>
     </View>
-   
+  
   )
+ 
 }
+
 
 const styles = StyleSheet.create ({
   container:{
