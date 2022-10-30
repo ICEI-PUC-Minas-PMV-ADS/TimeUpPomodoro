@@ -47,7 +47,7 @@ Assim, quando maior a nota, maior a facilidade de uso para o usuário. Abaixo, t
 
 |Caso de teste 05    | CX 05 -  Cadastro de novo usuário |
 |-------|-------------------------
-|Objetivo do teste| Verificar o fluxo de cadastro de novo usuário.  |
+|Objetivo do teste| Verificar se as CTA (_call to action_) e fluxo de cadastrar os serviços disponibilizados são claros para o usuário.  |
 |Ações esperadas |	1) Acessar a aplicação.  <br>  2) Clicar em "Cadastro de novo usuário".  <br> 3)Inserir email e senha de acordo com requisitos. <br> 4) Notificação de sucesso e login automático na nova conta. |
 |Critérios de êxito| O usuário registra e acessa sua nova conta. |
 
