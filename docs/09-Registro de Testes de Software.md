@@ -2,8 +2,6 @@
 
 O presente relatório demonstra as evidências dos testes de software realizados no sistema pela equipe e é baseado no plano de testes definido no [item 8 deste projeto](https://github.com/ICEI-PUC-Minas-PMV-ADS/TimeUpPomodoro/blob/main/docs/08-Plano%20de%20Testes%20de%20Software.md).
 
-
-
 ## 1. Tela de Apresentação e Login:
 Seguindo o plano de testes, iniciamos as verificações pela tela de login.
 Inicialmente, o sistema mostra uma tela de apresentação "TimeUp" com o botão "Acessar". Ao clicar, o usuário é remetido pra tela de login.
@@ -27,7 +25,6 @@ O usuário deve informar seus dados para ter acesso ao sistema.
 - caso a senha esteja errada, uma mensagm de erro é informada: "*Algo deu errado! Erro no Cadastro."*
 
 ![image](https://user-images.githubusercontent.com/78277341/198857944-242f388c-5ff6-4647-98c9-323e86dc424d.png)
-
 
 >**Observações:** ao tentar acessar com senha sem realizar o cadastro:
 >1. O sistema não informa ao usuário que ele não possui cadastro.
@@ -105,3 +102,4 @@ Na tela, o usuário pode apertar play, para iniciar o tempo, pausar ou continuar
 Após verificação, observamos que será necessário realizar uma retrospectiva do planejamento da sprint, realizando uma revisão das telas de implementação e a possibilidade de sua execução até a data final do projeto. 
 
 Observamos também que as telas apresentadas encontram-se dinâmicas e agradáveis. O acesso do usuário está fácil e intuitivo, de modo que, após algumas alterações de lógica e funcionalidade, será possível efetivar a entrega do objetivo do projeto: um app pomodoro. 
+
