@@ -3,7 +3,7 @@ import { useState}from 'react';
 import * as Animatable from 'react-native-animatable'
 import {useNavigation} from '@react-navigation/native'
 import { createUserWithEmailAndPassword} from 'firebase/auth';
-import { auth } from '../../fireBase/config';
+import { auth } from "../../firebase/config";
 
 export default function  Register() {
   const navigation = useNavigation();
