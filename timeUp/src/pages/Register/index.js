@@ -1,12 +1,36 @@
-import { View, Text, StyleSheet, TextInput, TouchableOpacity } from 'react-native'
-import React from 'react'
+import { View, Text, StyleSheet, TextInput, TouchableOpacity, Alert } from 'react-native'
+import { useState}from 'react';
 import * as Animatable from 'react-native-animatable'
 import {useNavigation} from '@react-navigation/native'
+import { createUserWithEmailAndPassword} from 'firebase/auth';
+import { auth } from '../../fireBase/config';
 
 export default function  Register() {
   const navigation = useNavigation();
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
 
+  function Login (){
+    if(email === '' || password === '')
+    {
+      Alert.alert('Algo deu errado!','Gentileza preencher todos os campos.');
+      return;
+    }
+  };
+
+async function createUser(){
+
+  await createUserWithEmailAndPassword(auth, email, password)
+  .then(value => {
+    Alert.alert("Algo deu errado!","Cadastrado  realizado com sucesso!");
+    navigation.navigate('SignIn')
+  })
+  .catch(error =>  Alert.alert("Algo deu errado!","Erro no Cadastrado!"));
+  return;
+}
+ 
   return (
+    
     <View style={styles.container}>
       <Animatable.View animation="fadeInLeft" delay={500} style={styles.containerHeader}>
         <Text style={styles.message}> Cadastro</Text>
@@ -16,20 +40,23 @@ export default function  Register() {
       <Text style={styles.title}>Email</Text>
       <TextInput
       placeholder='Digite um email...' style={styles.input}
-      />
-      <Text style={styles.title}>Nome</Text>
-      <TextInput
-      placeholder='Digite seu nome...' style={styles.input}
+      value={email}
+      onChangeText={value => setEmail(value)}
       />
       <Text style={styles.title}>Senha</Text>
       <TextInput
       placeholder='Digite sua senha...' style={styles.input}
+      secureTextEntry={true}
+      value={password}
+      onChangeText={value => setPassword(value)}
       />
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.button}  onPress={() => createUser()}
+      onPressIn={Login}>
         <Text  style={styles.buttonText}>Cadastrar</Text>
       </TouchableOpacity>
       <TouchableOpacity style={styles.buttonRegister}
-       onPress={() => navigation.navigate('SignIn')}>
+       onPress={() => navigation.navigate('SignIn')}
+       >
         <Text  style={styles.registerText}>Já possui conta? Logar</Text>
       </TouchableOpacity>
 
