@@ -4,7 +4,7 @@
 
 | **Caso de Teste**  | Página Inicial                                                                                                                                                                                                                                                                  |
 | ------------------- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Requisitos Associados** | A Página Inicial do app deverá constar os 8 Requisitos funcionais estipulados na tabelo de requisitos (RF-01, RF-05, RF-06, RF-07, RF-08, RF-09, RF-14 e RF16) para que o Caso de Teste "Pagina Inicial" seja completado com sucesso. |
+| **Requisitos Associados** | A Página Inicial do app deverá constar os 8 Requisitos funcionais estipulados na tabela de requisitos (RF-01, RF-05, RF-06, RF-07, RF-08, RF-09, RF-14 e RF16) para que o Caso de Teste "Pagina Inicial" seja completado com sucesso. |
 |  **Objetivo do Teste**  | Verificar se a página inicial da aplicação corresponde aos requisitos.                                                                                                                                               |
 |   | **Passos Principais**                                                                                                                                                                                                                                                             
 ||1) Acessar o Aplicativo "Pomodoro".
