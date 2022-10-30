@@ -2,7 +2,7 @@
 
 O Registro de Testes de Usabilidade é um relatório que contém as evidências dos testes e relatos dos usuários participantes, baseado no Plano de Testes de Usabilidade desenvolvido para os casos de uso desta etapa. Quanto maior for a nota, maior a facilidade no uso da aplicação.
 
-Foi considerada a inclusividade na paleta de cores, de modo que pessoas com daltonismo não tenham dificuldades por causa das cores escolhidas. Assim, foi utilizada a ferramenta Adobe Colors para a verificação da acessibilidade das paletas de cores bem como de seu contraste na interface com o usuário. Os fluxos e uso da paleta de cores podem ser verificados nos protótipos construídos no Figma. Além disso, foram considerados os seguintes princípios para a construção do fluxo de clientes e funcionários:
+Foi considerada a inclusividade na paleta de cores, de modo que pessoas com daltonismo não tenham dificuldades por causa das cores escolhidas. Assim, foi utilizada a ferramenta Adobe Colors para a verificação da acessibilidade das paletas de cores bem como de seu contraste na interface com o usuário. Os fluxos e uso da paleta de cores podem ser verificados nos protótipos construídos no [Figma](https://www.figma.com/file/j3IXXF3Ovc3VrjcOi2mTeV/TimeUP?node-id=32%3A462). Além disso, foram considerados os seguintes princípios para a construção do fluxo de clientes e funcionários:
 
    1. Visibilidade do status do sistema;
    2. Correspondência entre o sistema e o mundo real;
