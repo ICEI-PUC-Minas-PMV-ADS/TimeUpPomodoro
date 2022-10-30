@@ -9,6 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@fontsource/roboto": "^4.5.8",
     "@nestjs/common": "^9.1.5",
     "@react-native-community/masked-view": "^0.1.11",
     "@react-native-firebase/app": "~15.4.0",
@@ -23,7 +24,7 @@
     "expo-auth-session": "~3.7.1",
     "expo-random": "~12.3.0",
     "expo-status-bar": "~1.4.0",
-    "fire": "^0.55.1",
+    "fire": "^0.46.4",
     "firebase": "^9.6.11",
     "firebaseui": "^6.0.1",
     "install": "^0.13.0",
