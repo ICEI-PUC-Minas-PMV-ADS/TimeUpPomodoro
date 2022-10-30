@@ -5,32 +5,25 @@
 
 Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+Apresentam-se as principais interfaces da plataforma. Também é discutido como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
 
 ## Diagrama de Fluxo
 
 O diagrama apresenta o estudo do fluxo de interação do usuário com o sistema interativo e  muitas vezes sem a necessidade do desenho do design das telas da interface. Isso permite que o design das interações seja bem planejado e gere impacto na qualidade no design do wireframe interativo que será desenvolvido logo em seguida.
 
-O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamente a indicação dos principais elementos de interface - tais como menus e acessos - e funcionalidades, tais como editar, pesquisar, filtrar, configurar - e a conexão entre esses boxes a partir do processo de interação. Você pode ver mais explicações e exemplos https://www.lucidchart.com/blog/how-to-make-a-user-flow-diagram.
+O diagrama de fluxo pode ser desenvolvido com “boxes” que possuem internamente a indicação dos principais elementos de interface - tais como menus e acessos - e funcionalidades, tais como editar, pesquisar, filtrar, configurar - e a conexão entre esses boxes a partir do processo de interação. Na Linguagem de modelagem unificada (UML), o objetivo do diagrama de caso de uso é demonstrar as diferentes maneiras que o usuário pode interagir com um sistema.
 
-![Exemplo de Diagrama de Fluxo](img/diagramafluxo2.jpg)
+Dessa forma os alunos podem interagir com o sistema utiliozando os seguintes passos:
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagramas de Fluxo”.
-
-> **Links Úteis**:
-> - [Fluxograma online: seis sites para fazer gráfico sem instalar nada | Produtividade | TechTudo](https://www.techtudo.com.br/listas/2019/03/fluxograma-online-seis-sites-para-fazer-grafico-sem-instalar-nada.ghtml)
+![Diagrama sem nome drawio](https://user-images.githubusercontent.com/75712250/187011909-b33c1892-87de-4159-b1c6-dcd2fbdaf5c9.svg)
 
 ## Wireframes
 
-![Exemplo de Wireframe](img/wireframe-example.png)
+Os wireframes do projeto estão no [Figma](https://www.figma.com/file/j3IXXF3Ovc3VrjcOi2mTeV/TimeUP?node-id=32%3A462) do projeto, junto dos protótipos feitos. Temos tanto os formatos gerais de telas, quanto os fluxos entre elas, de modo a facilitar o desenvolvimento pelo grupo. As telas foram pensadas para serem minimalistas de modo a garantir o foco nos estudos, mas com elementos suficientes para garantir sua usabilidade, com símbolos claros para indicar ações. A modelagem dos fluxos entre as telas também ajuda não só o entendimento das funcionalidades necessárias para o atendimento de requisitos funcionais e não funcionais, mas também uma avaliação prévia do atendimento de um fluxo claro para os usuários.
 
-São protótipos usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante do layout de elementos fundamentais na interface.
- 
-> **Links Úteis**:
-> - [Protótipos vs Wireframes](https://www.nngroup.com/videos/prototypes-vs-wireframes-ux-projects/)
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [Axure](https://www.axure.com/edu) (Licença Educacional)
-> - [InvisionApp](https://www.invisionapp.com/) (Licença Educacional)
+Os wireframes estão abaixo, sendo possível conferir também protótipos na <a href="06-Template Padrão da Aplicação.md"> documentação do template apdrão da aplicação</a>.
+
+![Wireframes](https://github.com/ICEI-PUC-Minas-PMV-ADS/TimeUpPomodoro/blob/Allana-Tavares/docs/img/wireframe.jpg?raw=true)
+
+Temos também os fluxos entre elas:
+![Fluxos de telas](https://github.com/ICEI-PUC-Minas-PMV-ADS/TimeUpPomodoro/blob/ee1442d903d0e495de4d03a4366b540ea9917ca4/docs/img/figma.jpg)
