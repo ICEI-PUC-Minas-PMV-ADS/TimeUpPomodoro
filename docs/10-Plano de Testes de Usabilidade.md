@@ -41,9 +41,21 @@ Assim, quando maior a nota, maior a facilidade de uso para o usuário. Abaixo, t
 
 |Caso de teste 04     | CX 04 -  Adicionar meta |
 |-------|-------------------------
-|Objetivo do teste| Verificar se a meta pré definida para a atividade vai ser registreada.  |
+|Objetivo do teste| Verificar se a meta pré definida para a atividade vai ser registrada.  |
 |Ações esperadas |	1) Acessar a aplicação.  <br>  2) Clicar em "Atividade".  <br> 3) Selecionar a meta para execução da atividade.|
 |Critérios de êxito| A meta deve ser registrada pelo app conforme criterios do usuário. |
+
+|Caso de teste 05    | CX 05 -  Cadastro de novo usuário |
+|-------|-------------------------
+|Objetivo do teste| Verificar o fluxo de cadastro de novo usuário.  |
+|Ações esperadas |	1) Acessar a aplicação.  <br>  2) Clicar em "Cadastro de novo usuário".  <br> 3)Inserir email e senha de acordo com requisitos. <br> 4) Notificação de sucesso e login automático na nova conta. |
+|Critérios de êxito| O usuário registra e acessa sua nova conta. |
+
+|Caso de teste 06     | CX 06 -  Login de usuário (email) |
+|-------|-------------------------
+|Objetivo do teste| Verificar o fluxo de login de usuário cadastrado no aplicativo.  |
+|Ações esperadas |	1) Acessar a aplicação.  <br>  2) Clicar em "Login".  <br> 3) Inserir email e senha cadastrados. <br> 4) Login na conta. |
+|Critérios de êxito| O usuário acessa sua conta. |
 
 
 
