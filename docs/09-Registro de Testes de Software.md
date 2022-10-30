@@ -100,7 +100,7 @@ Na tela, o usuário pode apertar play, para iniciar o tempo, pausar ou continuar
 >2. Os botões de pause e continuar não funcionam corretamente.
 >3. As funções de alarme e alterar alarme não foram implementadas.
 
-## Conclusão: 
+## Conclusões: 
 
 Após verificação, observamos que será necessário realizar uma retrospectiva do planejamento da sprint, realizando uma revisão das telas de implementação e a possibilidade de sua execução até a data final do projeto. 
 
