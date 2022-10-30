@@ -50,7 +50,7 @@
 | **RF-11**     |  1) Na tela "To-do" do app, verificar se as atividades são puladas automaticamente após o tempo estipulado se esgotar.  |
 |  **Critérios de Êxito**  | Na página "To-do" se as tarefas forem puladas assim que o tempo esgotar.  |                                                                                                       
 
-| **Caso de Teste**  | Página Projeto                                                                  |
+| **Caso de Teste**  | CT04 - Página Projeto                                                                  |
 | ------------------- |----------------------------------------------------------------------------------------------|
 | **Requisitos Associados** | A Página projeto do app deverá constar o Requisito funcional estipulado na tabela de requisitos (RF-15) para que o Caso de Teste "Página Projeto" seja completado com sucesso. |
 |  **Objetivo do Teste**  | Verificar se a página projeto da aplicação corresponde aos requisitos.          |
@@ -61,7 +61,7 @@
    
    
    
-| **Caso de Teste**  | Página Configuração                                                      |
+| **Caso de Teste**  | CT05 - Página Configuração                                                      |
 | ------------------- |-------------------------------------------------------------------|
 | **Requisitos Associados** | A Página Configuração do app deverá constar os 2 Requisitos funcionais estipulados na tabela de requisitos (RF-04 e RF-12) para que o Caso de Teste "Página Configuração" seja completado com sucesso. |
 |  **Objetivo do Teste**  | Verificar se a página configuração da aplicação corresponde aos requisitos.       |
