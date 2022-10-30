@@ -1,4 +1,5 @@
 import { createNativeStackNavigator} from '@react-navigation/native-stack'
+import * as React from 'react';
 
 import Welcome from '../pages/Welcome'
 import SignIn from '../pages/SignIn'
@@ -11,15 +12,18 @@ import Info4 from '../pages/Infos/info4'
 import Time from '../pages/Timer'
 
 
-
-
 const Stack = createNativeStackNavigator();
-
 
 export default function Routes(){
     return(
-
+    
         <Stack.Navigator initialRouteName='Welcome'>
+        
+          <Stack.Screen
+            name="Time"
+            component={Time}        
+            options={{headerShown: false}}
+            />
             <Stack.Screen
             name="Welcome"
             component={Welcome}
@@ -35,7 +39,9 @@ export default function Routes(){
             component={Register}
             options={{headerShown: false}}
             />
-             <Stack.Screen
+        
+            
+            <Stack.Screen
             name="Infos"
             component={Infos}        
             options={{headerShown: false}}
@@ -59,13 +65,9 @@ export default function Routes(){
             component={Info4}        
             options={{headerShown: false}}
             />
-            <Stack.Screen
-            name="Time"
-            component={Time}        
-            options={{headerShown: false}}
-            />
            
         </Stack.Navigator>
+          
     
     )
 
