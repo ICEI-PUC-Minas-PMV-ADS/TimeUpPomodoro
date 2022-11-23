@@ -46,14 +46,6 @@ export default function Time() {
     }
   }
 
-  const startTimer = () => {
-    setTimerRunning(true);
-    setCustomInterval(
-      setInterval(() => {
-        changeTime();
-      }, 1000)
-    );
-  };
   const stopTimer = () => {
     setTimerRunning(false);
     if (customInterval) {
@@ -62,7 +54,14 @@ export default function Time() {
   };
   const variantTimer = () => {
     if (timerRunning) stopTimer();
-    else startTimer();
+    else {
+      setTimerRunning(true);
+      setCustomInterval(
+        setInterval(() => {
+          changeTime();
+        }, 1000)
+      );
+    }
   };
   const clear = () => {
     setIsFocus(!isFocus);
