@@ -26,8 +26,9 @@ export default function Time() {
 
   useEffect(() => {
     if (timerRunning) return;
+    stopTimer();
     setTimer();
-  }, [secondsFocus, minutesFocus, secondsBreak, minutesBreak]);
+  }, [secondsFocus, minutesFocus, secondsBreak, minutesBreak, isFocus]);
 
   const setTimer = () => {
     if (isFocus) {
@@ -45,6 +46,7 @@ export default function Time() {
       clearInterval(customInterval);
     }
   };
+
   const variantTimer = () => {
     if (timerRunning) stopTimer();
     else {
@@ -127,8 +129,7 @@ export default function Time() {
               maxLength={2}
               onChangeText={setMinutesFocus}
               value={minutesFocus}
-              placeholder="00"
-              defaultValue="25"
+              placeholder="25"
             />
             <Text style={styles.textInputTimer}> : </Text>
             <TextInput
@@ -137,7 +138,6 @@ export default function Time() {
               onChangeText={setSecondsFocus}
               value={secondsFocus}
               placeholder="00"
-              defaultValue="00"
             />
           </View>
 
@@ -150,8 +150,7 @@ export default function Time() {
               maxLength={2}
               onChangeText={setMinutesBreak}
               value={minutesBreak}
-              defaultValue="5"
-              placeholder="00"
+              placeholder="05"
             />
             <Text style={styles.textInputTimer}> : </Text>
             <TextInput
@@ -159,7 +158,6 @@ export default function Time() {
               maxLength={2}
               onChangeText={setSecondsBreak}
               value={secondsBreak}
-              defaultValue="00"
               placeholder="00"
             />
           </View>
