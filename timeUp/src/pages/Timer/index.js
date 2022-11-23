@@ -29,13 +29,6 @@ export default function Time() {
     setTimer();
   }, [secondsFocus, minutesFocus, secondsBreak, minutesBreak]);
 
-  useEffect(() => {
-    if (timerRunning === 0 && seconds === 0) {
-      setIsFocus(!isFocus);
-      clear();
-    }
-  }, [timerRunning])
-
   const setTimer = () => {
     if (isFocus) {
       setSeconds(secondsFocus);
@@ -70,8 +63,6 @@ export default function Time() {
   };
 
   const changeTime = () => {
-    // if (seconds == 0 && minutes == 0) clear();
-
     setSeconds((oldSeconds) => {
       if (oldSeconds == 0) {
        if (minutes == 0) {
