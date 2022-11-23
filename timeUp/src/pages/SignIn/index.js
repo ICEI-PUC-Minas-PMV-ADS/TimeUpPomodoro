@@ -18,18 +18,18 @@ export default function  SignIn() {
     if(email === '' || password === '')
     {
       Alert.alert('Algo deu errado!','Gentileza preencher todos os campos.');
-      return;
+      return 
     }
   };
 async function login(){
 
   await signInWithEmailAndPassword(auth, email, password)
   .then(value => {
-    let user= value.user;
+    let user= value.user;  
     navigation.navigate('Infos', {idUser: user.uid})
   })
-  .catch(error => Alert.alert("Algo deu errado!","Erro no Cadastrado!"));
-  return;
+ .catch(error => Alert.alert("Ops!","Usuario não encontrado!"));
+   return;
 
 }
   return (

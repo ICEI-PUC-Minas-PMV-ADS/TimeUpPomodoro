@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet, TextInput, TouchableOpacity, Alert } from 'react-native'
-import { useState}from 'react';
+import { isValidElement, useState}from 'react';
 import * as Animatable from 'react-native-animatable'
 import {useNavigation} from '@react-navigation/native'
 import { createUserWithEmailAndPassword} from 'firebase/auth';
@@ -15,7 +15,8 @@ export default function  Register() {
     {
       Alert.alert('Algo deu errado!','Gentileza preencher todos os campos.');
       return;
-    }
+    } 
+    
   };
 
 async function createUser(){
@@ -25,8 +26,9 @@ async function createUser(){
     Alert.alert("Sucesso!","Cadastrado  realizado com sucesso!");
     navigation.navigate('SignIn')
   })
-  .catch(error =>  Alert.alert("Algo deu errado!","Erro no Cadastrado!"));
+  .catch(error =>  Alert.alert("Ops!","Digite um email ou senha validos!") );
   return;
+
 }
  
   return (
