@@ -47,7 +47,6 @@ export default function Time() {
   }
 
   const startTimer = () => {
-    if (timerRunning) return;
     setTimerRunning(true);
     setCustomInterval(
       setInterval(() => {
@@ -56,7 +55,6 @@ export default function Time() {
     );
   };
   const stopTimer = () => {
-    if (!timerRunning) return;
     setTimerRunning(false);
     if (customInterval) {
       clearInterval(customInterval);
@@ -67,6 +65,7 @@ export default function Time() {
     else startTimer();
   };
   const clear = () => {
+    setIsFocus(!isFocus);
     stopTimer();
     setTimer();
   };
@@ -77,11 +76,9 @@ export default function Time() {
     setSeconds((oldSeconds) => {
       if (oldSeconds == 0) {
        if (minutes == 0) {
-        setIsFocus(!isFocus)
-        // return clearInterval(customInterval);
-        setTimeout(() => {
-          clearInterval(customInterval)
-        },0)
+        setIsFocus(!isFocus);
+        setTimerRunning(false);
+        return 0;
        }
        else {
         setMinutes(minutes - 1);
@@ -99,8 +96,8 @@ export default function Time() {
 
       <View style={styles.containerTimer}>
         <Text style={styles.textTimer}>
-          {minutes < 10 ? "0" + minutes : minutes}:
-          {seconds < 10 ? "0" + seconds : seconds}
+          {("0" + minutes).slice(-2)}:
+          {("0" + seconds).slice(-2)}
         </Text>
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.secondaryButton}>
@@ -141,6 +138,7 @@ export default function Time() {
               onChangeText={setMinutesFocus}
               value={minutesFocus}
               placeholder="00"
+              defaultValue="25"
             />
             <Text style={styles.textInputTimer}> : </Text>
             <TextInput
@@ -149,6 +147,7 @@ export default function Time() {
               onChangeText={setSecondsFocus}
               value={secondsFocus}
               placeholder="00"
+              defaultValue="00"
             />
           </View>
 
@@ -161,6 +160,7 @@ export default function Time() {
               maxLength={2}
               onChangeText={setMinutesBreak}
               value={minutesBreak}
+              defaultValue="5"
               placeholder="00"
             />
             <Text style={styles.textInputTimer}> : </Text>
@@ -169,6 +169,7 @@ export default function Time() {
               maxLength={2}
               onChangeText={setSecondsBreak}
               value={secondsBreak}
+              defaultValue="00"
               placeholder="00"
             />
           </View>
