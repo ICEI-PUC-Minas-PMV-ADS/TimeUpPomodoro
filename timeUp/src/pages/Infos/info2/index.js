@@ -18,7 +18,7 @@ export default function  Info2() {
       </View>
       <Animatable.View animation="fadeInLeft" delay={500} style={styles.containerHeader}>
          <Text style={styles.text}>
-         Ao clicar play no tiumer você terá 25 min para estudo e 5 de pausa para relaxar
+         Ao clicar play no timer você terá 25 min para estudo e 5 de pausa para relaxar
          </Text>  
          </Animatable.View>
          <TouchableOpacity
