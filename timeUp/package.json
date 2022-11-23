@@ -19,6 +19,7 @@
     "@types/react": "~18.0.0",
     "@types/react-native": "~0.69.1",
     "base": "^3.0.0",
+    "emoji-picker-react": "^4.4.5",
     "expo": "~46.0.13",
     "expo-application": "^4.2.2",
     "expo-auth-session": "~3.7.1",
