@@ -1,11 +1,18 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useState } from "react";
-import { Text, View, StyleSheet, TouchableOpacity, Image } from "react-native";
+import { Text, View, StyleSheet, TouchableOpacity, Image, Modal } from "react-native";
+import ModalPicker from './ModalPicker';
 
 export default function Time() {
   const [seconds, setSeconds] = useState(0);
   const [minutes, setMinutes] = useState(25);
   const [customInterval, setCustomInterval] = useState();
+  const [isModalVisible, setisModalVisible] = useState(false);
+  const [chooseData, setchooseData] = useState('...'); 
+
+  const changeModalVisibility = (bool) => {
+    setisModalVisible(bool)
+  }
 
   const startTimer = () => {
     setCustomInterval(
@@ -14,11 +21,13 @@ export default function Time() {
       }, 1000)
     );
   };
+
   const stopTimer = () => {
     if (customInterval) {
       clearInterval(customInterval);
     }
   };
+
   const clear = () => {
     stopTimer();
     setSeconds(0);
@@ -29,16 +38,20 @@ export default function Time() {
 
   const changeTime = () => {
     if (seconds == 0 && minutes == 0)
-    return;
+      return;
     setSeconds((oldSeconds) => {
-      if (oldSeconds == 0)
-      {
-        setMinutes (minutes - 1)
+      if (oldSeconds == 0) {
+        setMinutes(minutes - 1)
         return 59
       }
-       return oldSeconds - 1;
+      return oldSeconds - 1;
     });
   };
+
+  const setData = (option) => {
+    console.log(option)
+  }
+
   return (
     <View style={styles.wrapper}>
       <View style={styles.containerLogo}>
@@ -51,11 +64,22 @@ export default function Time() {
           {seconds < 10 ? "0" + seconds : seconds}
         </Text>
         <View style={styles.buttonContainer}>
-          <TouchableOpacity style={styles.secondaryButton} onPress={stopTimer}>
-            <Image
-              source={require("../../assets/Pause.png")}
-              style={styles.buttonIcon}
-            />
+          <TouchableOpacity
+            onPress={() => changeModalVisibility(true)}
+            style={styles.secondaryButton}
+          >
+            <Text>{chooseData}</Text>
+            <Modal
+              transparent={true}
+              animationType='fade'
+              visible={isModalVisible}
+              nRequestClose={() => changeModalVisibility(false)}
+            >
+              <ModalPicker
+                changeModalVisibility={changeModalVisibility}
+                setData={setData}
+              />
+            </Modal>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.primaryButton} onPress={startTimer}>
