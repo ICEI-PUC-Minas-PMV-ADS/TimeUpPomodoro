@@ -1,42 +1,83 @@
 import { StatusBar } from "expo-status-bar";
-import React, { useState } from "react";
-import { Text, View, StyleSheet, TouchableOpacity, Image } from "react-native";
+import React, { useEffect, useState } from "react";
+import {
+  Text,
+  TextInput,
+  View,
+  StyleSheet,
+  TouchableOpacity,
+  Image,
+} from "react-native";
 
 export default function Time() {
   const [seconds, setSeconds] = useState(0);
   const [minutes, setMinutes] = useState(25);
   const [customInterval, setCustomInterval] = useState();
 
-  const startTimer = () => {
-    setCustomInterval(
-      setInterval(() => {
-        changeTime();
-      }, 1000)
-    );
-  };
+  const [timerRunning, setTimerRunning] = useState(false);
+
+  const [secondsFocus, setSecondsFocus] = useState(0);
+  const [minutesFocus, setMinutesFocus] = useState(25);
+
+  const [secondsBreak, setSecondsBreak] = useState(0);
+  const [minutesBreak, setMinutesBreak] = useState(5);
+
+  const [isFocus, setIsFocus] = useState(true);
+
+  useEffect(() => {
+    if (timerRunning) return;
+    stopTimer();
+    setTimer();
+  }, [secondsFocus, minutesFocus, secondsBreak, minutesBreak, isFocus]);
+
+  const setTimer = () => {
+    if (isFocus) {
+      setSeconds(secondsFocus);
+      setMinutes(minutesFocus);
+    } else {
+      setSeconds(secondsBreak);
+      setMinutes(minutesBreak);
+    }
+  }
+
   const stopTimer = () => {
+    setTimerRunning(false);
     if (customInterval) {
       clearInterval(customInterval);
     }
   };
-  const clear = () => {
-    stopTimer();
-    setSeconds(0);
-    setMinutes(0);
+
+  const variantTimer = () => {
+    if (timerRunning) stopTimer();
+    else {
+      setTimerRunning(true);
+      setCustomInterval(
+        setInterval(() => {
+          changeTime();
+        }, 1000)
+      );
+    }
   };
-  //o intervalo de segundos está entre 59 e 0, caso os segundos fique negativo, 
-  //retorna para 59 e desconta o minuto
+  const clear = () => {
+    setIsFocus(!isFocus);
+    stopTimer();
+    setTimer();
+  };
 
   const changeTime = () => {
-    if (seconds == 0 && minutes == 0)
-    return;
     setSeconds((oldSeconds) => {
-      if (oldSeconds == 0)
-      {
-        setMinutes (minutes - 1)
-        return 59
+      if (oldSeconds == 0) {
+       if (minutes == 0) {
+        setIsFocus(!isFocus);
+        setTimerRunning(false);
+        return 0;
+       }
+       else {
+        setMinutes(minutes - 1);
+        return 59;
+       }
       }
-       return oldSeconds - 1;
+      return oldSeconds - 1;
     });
   };
   return (
@@ -47,22 +88,29 @@ export default function Time() {
 
       <View style={styles.containerTimer}>
         <Text style={styles.textTimer}>
-          {minutes < 10 ? "0" + minutes : minutes}:
-          {seconds < 10 ? "0" + seconds : seconds}
+          {("0" + minutes).slice(-2)}:
+          {("0" + seconds).slice(-2)}
         </Text>
         <View style={styles.buttonContainer}>
-          <TouchableOpacity style={styles.secondaryButton} onPress={stopTimer}>
+          <TouchableOpacity style={styles.secondaryButton}>
             <Image
-              source={require("../../assets/Pause.png")}
+              source={require("../../assets/iconConfig.png")}
               style={styles.buttonIcon}
             />
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.primaryButton} onPress={startTimer}>
-            <Image
-              source={require("../../assets/play.png")}
-              style={styles.buttonIconPrimary}
-            />
+          <TouchableOpacity style={styles.primaryButton} onPress={variantTimer}>
+            {timerRunning ? (
+              <Image
+                source={require("../../assets/Pause.png")}
+                style={styles.buttonIconPrimary}
+              />
+            ) : (
+              <Image
+                source={require("../../assets/play.png")}
+                style={styles.buttonIconPrimary}
+              />
+            )}
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.secondaryButton} onPress={clear}>
@@ -71,6 +119,48 @@ export default function Time() {
               style={styles.buttonIcon}
             />
           </TouchableOpacity>
+        </View>
+
+        <View style={styles.containerInputTimer}>
+          <View style={styles.inputTimer}>
+            <Text style={styles.textInputTimer}>Foco(minutos : segundos):</Text>
+            <TextInput
+              style={styles.textInputValue}
+              maxLength={2}
+              onChangeText={setMinutesFocus}
+              value={minutesFocus}
+              placeholder="25"
+            />
+            <Text style={styles.textInputTimer}> : </Text>
+            <TextInput
+              style={styles.textInputValue}
+              maxLength={2}
+              onChangeText={setSecondsFocus}
+              value={secondsFocus}
+              placeholder="00"
+            />
+          </View>
+
+          <View style={styles.inputTimer}>
+            <Text style={styles.textInputTimer}>
+              Pausa(minutos : segundos):
+            </Text>
+            <TextInput
+              style={styles.textInputValue}
+              maxLength={2}
+              onChangeText={setMinutesBreak}
+              value={minutesBreak}
+              placeholder="05"
+            />
+            <Text style={styles.textInputTimer}> : </Text>
+            <TextInput
+              style={styles.textInputValue}
+              maxLength={2}
+              onChangeText={setSecondsBreak}
+              value={secondsBreak}
+              placeholder="00"
+            />
+          </View>
         </View>
 
         <StatusBar style="auto" />
@@ -109,7 +199,7 @@ const styles = StyleSheet.create({
     display: "flex",
     position: "relative",
     alignItems: "center",
-    marginTop: 5,
+    marginTop: 9,
     marginLeft: 2,
   },
   buttonIconPrimary: {
@@ -135,5 +225,27 @@ const styles = StyleSheet.create({
     width: 80,
     height: 80,
     padding: 24,
+  },
+  containerInputTimer: {
+    marginTop: 50,
+    alignItems: "center",
+    padding: 20,
+  },
+  inputTimer: {
+    display: "flex",
+    flexDirection: "row",
+    width: "100%",
+    alignItems: "center",
+    padding: 5,
+  },
+  textInputTimer: {
+    fontSize: 15,
+    color: "#471515",
+    fontWeight: "bold",
+    marginRight: 5,
+  },
+  textInputValue: {
+    fontSize: 20,
+    color: "#471515",
   },
 });
