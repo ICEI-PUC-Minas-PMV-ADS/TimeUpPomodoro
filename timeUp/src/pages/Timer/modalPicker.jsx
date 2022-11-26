@@ -53,8 +53,8 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        bottom:'-22%',
-        right: '22%'
+        bottom:'-25%',
+        right: '20%'
     },
     modal: {
         backgroundColor: "#FF9C9C",
