@@ -71,9 +71,11 @@ Estes requisitos são apresentados a seguir, acompanhados por algumas limitaçõ
 | RF-11 | Os elementos da lista to-do podem ser associados ao temporizador de tempo, garantindo a troca de atividades.                                                                                                            | Baixa |
 | RF-12 | A paleta de cores do software muda automaticamente de acordo com o horário do computador local.                                                                                                                         | Baixa |
 | RF-13 | O software deve exibir um alerta ao final de cada ciclo.                                                                                                                                                                | Média |
-| RF-14 | A tela inicial deve exibir menu para interação com outras funcionalidades.                                                                                                                                              | Média |
+| RF-14 | A tela inicial deve exibir um botão para acessar o login                                                                                                                                              | Alta |
 | RF-15 | O software deve apresentar dentro de cada tarefa ou projeto um temporizador.                                                                                                                                            | Média |
 | RF-16 | O software deve conter botão para acesso a um modal, onde o usuário poderá escrever anotações, tal como um bloco de notas.                                                                                              | Baixa |
+| RF-17 | O software deve conter uma tela com inputs para acessar  a tela de login                                                                                              | Alta|
+| RF-18 |  O software deve conter uma tela com inputs para cadastro de usuário                                                                                            | Alta |
 
 ### Requisitos não-funcionais
 
