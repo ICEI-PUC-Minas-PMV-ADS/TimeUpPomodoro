@@ -8,7 +8,7 @@ export default function Time() {
   const [minutes, setMinutes] = useState(25);
   const [customInterval, setCustomInterval] = useState();
   const [isModalVisible, setisModalVisible] = useState(false);
-  const [chooseData, setchooseData] = useState('...'); 
+  const [chooseData] = useState(''); 
 
   const changeModalVisibility = (bool) => {
     setisModalVisible(bool)
@@ -64,10 +64,12 @@ export default function Time() {
           {seconds < 10 ? "0" + seconds : seconds}
         </Text>
         <View style={styles.buttonContainer}>
-          <TouchableOpacity
-            onPress={() => changeModalVisibility(true)}
-            style={styles.secondaryButton}
-          >
+          <TouchableOpacity style={styles.secondaryButton}
+            onPress={() => changeModalVisibility(true)}>
+            <Image
+              source={require("../../assets/iconConfig.png")}
+            style={styles.buttonIconDot}
+           />
             <Text>{chooseData}</Text>
             <Modal
               transparent={true}
@@ -136,6 +138,14 @@ const styles = StyleSheet.create({
     marginTop: 5,
     marginLeft: 2,
   },
+
+buttonIconDot: {
+  display: "flex",
+  position: "relative",
+  alignItems: "center",
+  marginTop: 12,
+ },
+  
   buttonIconPrimary: {
     display: "flex",
     position: "relative",

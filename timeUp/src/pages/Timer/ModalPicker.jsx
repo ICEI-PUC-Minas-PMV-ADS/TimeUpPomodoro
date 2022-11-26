@@ -4,7 +4,7 @@ import {
     TouchableOpacity, Dimensions, ScrollView,
 } from 'react-native'
 
-const OPTIONS = ['atividades', 'notas' ]
+const OPTIONS = ['Atividades', 'Notas']
 const WIDTH = Dimensions.get('window').width;
 const HEIGHT = Dimensions.get('window').height;
 
@@ -34,7 +34,7 @@ export default function ModalPicker(props) {
             onPress={() => props.changeModalVisibility(false)}
             style={styles.container}
         >
-            <View style={[styles.modal, { width: WIDTH - 20, height: HEIGHT / 6 }]}>
+            <View style={[styles.modal, { width: WIDTH - 320, height: HEIGHT / 6 }]}>
                 <ScrollView>
                     {option}
                 </ScrollView>
@@ -49,12 +49,13 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
+        bottom:'-30%',
+        right: '18%'
     },
     modal: {
-        backgroundColor: 'white',
+        backgroundColor: "#FF9C9C",
         borderRadius: 32,
-
     },
     option: {
         alignItems: 'flex-start',
