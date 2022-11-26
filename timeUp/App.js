@@ -1,14 +1,21 @@
-import { StatusBar } from 'expo-status-bar';
-import { SplashScreen} from './src/screens/SplashScreen';
-import { HelperScreen } from './src/screens/SplashScreen/info';
-import { useFonts } from '@expo-google-fonts/poppins';
-
+import React from 'react';
+import { StatusBar} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native'
+import Routes from './src/routes';
+import { ThemeProvider } from './src/pages/NightMode/themes';
 
 export default function App() {
+  
   return (
-    <HelperScreen/>
+    <ThemeProvider>
+      <NavigationContainer>
+        <StatusBar barStyle="default"/>
+        <Routes/>
+      </NavigationContainer>
+    </ThemeProvider>
   );
- 
+
 }
+
 
 
