@@ -15,8 +15,8 @@ export default function  Info3() {
         resizeMode="contain"/>
       </View>
       <Animatable.View animation="fadeInLeft" delay={500} style={styles.containerHeader}>
-        <Text style={styles.message}>Olá!</Text>  
-         <Text style={styles.text}>No Time Up, você pode utilizar um temporizador Pomodoro ou personalizar o que melhor funciona para você!</Text>  
+        <Text style={styles.message}>Não esqueça!</Text>  
+         <Text style={styles.text}>Durante as pausas tente relaxar para que possa retornar ao foco total !</Text>  
          </Animatable.View>
          <TouchableOpacity
         style={styles.button}

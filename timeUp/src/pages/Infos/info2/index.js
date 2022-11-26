@@ -2,6 +2,8 @@ import { View, Text, StyleSheet,TouchableOpacity } from 'react-native'
 import React from 'react'
 import * as Animatable from 'react-native-animatable'
 
+
+
 import {useNavigation} from '@react-navigation/native'
 export default function  Info2() {
   const navigation = useNavigation();
@@ -15,7 +17,9 @@ export default function  Info2() {
         resizeMode="contain"/>
       </View>
       <Animatable.View animation="fadeInLeft" delay={500} style={styles.containerHeader}>
-         <Text style={styles.text}>Esse app busca te ajudar a dividir o tempo em atividade e em desanso :)</Text>  
+         <Text style={styles.text}>
+         Ao clicar play no timer você terá 25 min para estudo e 5 de pausa para relaxar
+         </Text>  
          </Animatable.View>
          <TouchableOpacity
         style={styles.button}
