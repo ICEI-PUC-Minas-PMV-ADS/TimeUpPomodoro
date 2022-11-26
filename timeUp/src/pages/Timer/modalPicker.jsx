@@ -37,7 +37,7 @@ const {dark} = useTheme();
             style={styles.container}
         >
             
-            <View style={[styles.modal, { width: WIDTH - 250, height: HEIGHT / 6 }]} 
+            <View style={[styles.modal, { width: WIDTH - 250, height: HEIGHT / 5 }]} 
             placeholderTextColor={ dark ? "#FFF4EF85" : "#47151585"}>
                 
                     {option}
@@ -53,8 +53,8 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        bottom:'-22%',
-        right: '22%'
+        bottom:'-25%',
+        right: '20%'
     },
     modal: {
         backgroundColor: "#FF9C9C",
