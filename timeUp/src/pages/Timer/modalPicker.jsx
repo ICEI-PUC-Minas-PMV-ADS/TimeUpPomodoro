@@ -1,19 +1,15 @@
 import React from 'react'
 import {
     StyleSheet, Text, View, 
-    TouchableOpacity, Dimensions, useEffect,
+    TouchableOpacity, Dimensions,
 } from 'react-native'
 import { useTheme } from "../NightMode/themes";
 
+export default function ModalPicker(props) {
 const OPTIONS = ['Atividades', 'Notas']
 const WIDTH = Dimensions.get('window').width;
 const HEIGHT = Dimensions.get('window').height;
-const {dark, colors, setScheme} = useTheme();
-
-const toggleTheme = () => {
-  dark ? setScheme('light') : setScheme('dark');
-};
-export default function ModalPicker(props) {
+const {dark} = useTheme();
     
     
     const onPressItem = (option) => {

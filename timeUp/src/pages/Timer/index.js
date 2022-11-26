@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useEffect, useState } from "react";
-import { Text, TextInput, View, StyleSheet, TouchableOpacity, Image, useColorScheme, Switch, Modal } from "react-native";
+import { Text, TextInput, View, StyleSheet, TouchableOpacity, Image, Switch, Modal } from "react-native";
 import { useTheme } from "../NightMode/themes";
 import ModalPicker from './modalPicker';
 
