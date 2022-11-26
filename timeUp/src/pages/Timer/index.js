@@ -1,7 +1,8 @@
 import { StatusBar } from "expo-status-bar";
 import React, { useEffect, useState } from "react";
-import { Text, TextInput, View, StyleSheet, TouchableOpacity, Image, useColorScheme, Switch} from "react-native";
+import { Text, TextInput, View, StyleSheet, TouchableOpacity, Image, useColorScheme, Switch, Modal } from "react-native";
 import { useTheme } from "../NightMode/themes";
+import ModalPicker from './modalPicker';
 
 export default function Time() {
   const [seconds, setSeconds] = useState(0);
@@ -17,6 +18,16 @@ export default function Time() {
   const [minutesBreak, setMinutesBreak] = useState(5);
 
   const [isFocus, setIsFocus] = useState(true);
+
+  const changeModalVisibility = (bool) => {
+    setisModalVisible(bool)
+  }
+  const [chooseData] = useState(''); 
+  const [isModalVisible, setisModalVisible] = useState(false);
+  const setData = (option) => {
+    console.log(option)
+  }
+
 
   useEffect(() => {
     if (timerRunning) return;
@@ -97,11 +108,25 @@ export default function Time() {
           {("0" + seconds).slice(-2)}
         </Text>
         <View style={styles.buttonContainer}>
-          <TouchableOpacity style={[styles.secondaryButton, {backgroundColor: colors.secondary}]}>
+          <TouchableOpacity style={[styles.secondaryButton, {backgroundColor: colors.secondary}]} 
+          onPress={() => changeModalVisibility(true)}>
             <Image
               source={require("../../assets/iconConfig.png")}
               style={styles.buttonIcon}
             />
+            <Text>{chooseData}</Text>
+            <Modal
+              transparent={true}
+              animationType='fade'
+              visible={isModalVisible}
+              nRequestClose={() => changeModalVisibility(false)}
+            >
+              <ModalPicker
+                changeModalVisibility={changeModalVisibility}
+                setData={setData}
+              />
+            </Modal>
+
           </TouchableOpacity>
 
           <TouchableOpacity style={[styles.primaryButton, {backgroundColor: colors.primary}]} onPress={variantTimer}>
@@ -212,7 +237,7 @@ const styles = StyleSheet.create({
     marginTop: 9,
     marginLeft: 2,
   },
-  buttonIconPrimary: {
+ buttonIconPrimary: {
     display: "flex",
     position: "relative",
     alignItems: "center",
