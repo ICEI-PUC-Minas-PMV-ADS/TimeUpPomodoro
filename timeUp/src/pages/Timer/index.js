@@ -10,6 +10,7 @@ import {
   Switch,
   Modal,
   Button,
+  Alert
 } from "react-native";
 import { useTheme } from "../NightMode/themes";
 import ModalPicker from "./modalPicker";
@@ -113,6 +114,7 @@ export default function Time() {
       if (changeMinutes && oldMinutes == 0) {
           setIsFocus(!isFocus);
           playSound();
+          Alert.alert('Ops!','Tempo finalizado.');
           setTimerRunning(false);
           return 0;
         }
