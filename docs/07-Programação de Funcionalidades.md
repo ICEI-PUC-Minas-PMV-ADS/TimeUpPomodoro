@@ -45,7 +45,7 @@ Foi selecionado o tempo para pausa de 5 segundos para a execução mais rápida 
 
 ## Requisitos não funcionais
 
-Conforme testes os requisitos não funcionais atendidos (RNF-01, RNF-02, RNF-04, RNF05)  |
+Conforme testes os requisitos não funcionais atendidos (RNF-01, RNF-02, RNF-04, RNF05) 
 
  ### Design responsivo nas interfaces gráficas (RFN - 02)
  
@@ -55,9 +55,13 @@ Conforme testes os requisitos não funcionais atendidos (RNF-01, RNF-02, RNF-04,
  
  https://user-images.githubusercontent.com/90660755/204157483-7341b916-f26f-498e-a630-18d95cef9c63.mp4
 
+###  Ajuste de Tempo (RFN - 04)
 
+![Ajuste Tempo](https://user-images.githubusercontent.com/90660755/204157739-f7529faa-3fa6-4ef8-a967-ac6517772399.png)
 
+###  Informações Descritas pelo Usuário.
 
+![InfoUser](https://user-images.githubusercontent.com/90660755/204157930-5c1fa3c5-a797-467c-a5d2-295cf49c1fc4.png)
 
 ## Código fonte
 
