@@ -45,6 +45,17 @@ Foi selecionado o tempo para pausa de 5 segundos para a execução mais rápida 
 
 | **Requisitos não Funcionais** | Conforme testes os requisitos não funcionais atendidos (RNF-01, RNF-02, RNF-04, RNF05)  |
 
+ ### Design responsivo nas interfaces gráficas (RFN - 02)
+ 
+ ![cronômetro](https://user-images.githubusercontent.com/90660755/204157412-63e2bedb-01ce-4d10-9b47-be839d7cc74b.png)
+ 
+ ### Som do Temporizador (RFN - 03)
+ 
+ https://user-images.githubusercontent.com/90660755/204157483-7341b916-f26f-498e-a630-18d95cef9c63.mp4
+
+
+
+
 
 ## Código fonte
 
