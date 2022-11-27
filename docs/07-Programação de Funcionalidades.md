@@ -32,6 +32,11 @@ Abaixo constam os requisitos atendidos até o presente momento.
 
 ![Inserir Tarefa](https://user-images.githubusercontent.com/90660755/204154626-f7488b96-98a4-4f03-8d4d-6043c0bb79b3.png)
 
+### Deletar Tarefa
+
+![Excluir Tarefa](https://user-images.githubusercontent.com/90660755/204154773-3db3b82a-a452-4335-b587-5e443b367e69.png)
+
+
 
 ## Código fonte
 
