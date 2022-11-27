@@ -16,6 +16,11 @@ Abaixo constam os requisitos atendidos até o presente momento.
 
 ![Tela de Login](https://user-images.githubusercontent.com/90660755/204153583-98dacbe8-923e-4906-a07d-4c0ec5d3dfd3.png)
 
+### Cronômetro (RF - 01, RF - 02, RF - 03)
+
+![cronômetro](https://user-images.githubusercontent.com/90660755/204154049-cfdb3072-064b-4c5b-adad-8829d9170b28.png)
+
+
 ## Código fonte
 
 Abaixo está especificado a estruturação do código do projeto TimeUp:
