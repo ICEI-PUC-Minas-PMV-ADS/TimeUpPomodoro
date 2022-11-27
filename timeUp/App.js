@@ -4,6 +4,7 @@ import {NavigationContainer} from '@react-navigation/native'
 import Routes from './src/routes';
 import { ThemeProvider } from './src/pages/NightMode/themes';
 
+
 export default function App() {
   
   return (

@@ -4,18 +4,25 @@ import {
     TouchableOpacity, Dimensions,
 } from 'react-native'
 import { useTheme } from "../NightMode/themes";
+import {useNavigation} from '@react-navigation/native'
+
 
 export default function ModalPicker(props) {
 const OPTIONS = ['Atividades', 'Notas']
 const WIDTH = Dimensions.get('window').width;
 const HEIGHT = Dimensions.get('window').height;
 const {dark} = useTheme();
-    
+const navigation = useNavigation();
     
     const onPressItem = (option) => {
         props.changeModalVisibility(false);
         props.setData(option);
+
+        if(option == 'Atividades'){
+            navigation.navigate('ListaTODO');
+        }
     }
+
 
     const option = OPTIONS.map((option, index) => {
         return (
@@ -30,7 +37,7 @@ const {dark} = useTheme();
             </TouchableOpacity>
         )
     })
-
+   
     return (
         <TouchableOpacity
             onPress={() => props.changeModalVisibility(false)}
