@@ -7,7 +7,6 @@ Nesta sessão serão apresentadas as telas desenvolvidas para cada uma das funci
 
 Abaixo constam os requisitos atendidos até o presente momento.
 
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Requisitos Funcionais** | A Página Inicial do app consta 13 Requisitos funcionais estipulados na tabela de requisitos (RF-01, RF-02, RF-03, RF-04, RF-05, RF-06, RF-07, RF-08, RF-09, RF-10, RF-12, RF-13, RF-14)
 
 ### Tela Inicial (RF - 10, RF - 13)
