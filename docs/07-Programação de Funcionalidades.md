@@ -14,7 +14,7 @@ Abaixo constam os requisitos atendidos até o presente momento.
 
 ### Tela Inicial (RF - 10, RF - 13)
 
-![Tela de Login](https://user-images.githubusercontent.com/90660755/204153583-98dacbe8-923e-4906-a07d-4c0ec5d3dfd3.png)
+![Tela de Login](https://user-images.githubusercontent.com/90660755/204154120-33adc286-0a12-4eb5-bf65-060265343ab4.png)
 
 ### Cronômetro (RF - 01, RF - 02, RF - 03)
 
