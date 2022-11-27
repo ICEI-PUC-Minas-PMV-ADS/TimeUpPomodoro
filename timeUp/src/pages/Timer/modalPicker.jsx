@@ -22,10 +22,10 @@ const navigation = useNavigation();
             navigation.navigate('ListaTODO');
               }
          
-        if (option == 'Notas'){     
+       /* if (option == 'Notas'){     
                 navigation.navigate('Home');;
                   
-        }
+        }*/
     
     }
 
