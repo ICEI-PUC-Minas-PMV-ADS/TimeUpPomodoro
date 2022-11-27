@@ -7,10 +7,9 @@ Nesta sessão serão apresentadas as telas desenvolvidas para cada uma das funci
 
 Abaixo constam os requisitos atendidos até o presente momento.
 
-| **Requisitos** | Página Inicial |
+| **Requisitos Funcionais** | Página Inicial |
 | ------------------- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Requisitos Funcionais** | A Página Inicial do app consta 13 Requisitos funcionais estipulados na tabela de requisitos (RF-01, RF-02, RF-03, RF-04, RF-05, RF-06, RF-07, RF-08, RF-09, RF-10, RF-12, RF-13, RF-14)
-| **Requisitos não Funcionais** | Conforme testes os requisitos não funcionais atendidos (RNF-01, RNF-02, RNF-04, RNF05)  |
 
 ### Tela Inicial (RF - 10, RF - 13)
 
@@ -45,6 +44,8 @@ Abaixo constam os requisitos atendidos até o presente momento.
 https://user-images.githubusercontent.com/90660755/204156562-a6ea2ab1-beed-4511-9a94-d626464d4856.mp4
 
 Foi selecionado o tempo para pausa de 5 segundos para a execução mais rápida do alarme.
+
+| **Requisitos não Funcionais** | Conforme testes os requisitos não funcionais atendidos (RNF-01, RNF-02, RNF-04, RNF05)  |
 
 
 ## Código fonte
