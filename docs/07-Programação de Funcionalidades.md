@@ -24,9 +24,14 @@ Abaixo constam os requisitos atendidos até o presente momento.
 
 ![Modo Noturno](https://user-images.githubusercontent.com/90660755/204154232-2def0951-4ad0-40da-b635-a41898dfff9f.png)
 
-### Modal (RF -07, RF - 11)
+### Modal (RF - 07, RF - 11)
 
 ![Modal](https://user-images.githubusercontent.com/90660755/204154393-28e20993-9c3e-4fb8-a0c9-a0e5657a490e.png)
+
+### Inserir Tarefas (RF 04)
+
+![Inserir Tarefa](https://user-images.githubusercontent.com/90660755/204154626-f7488b96-98a4-4f03-8d4d-6043c0bb79b3.png)
+
 
 ## Código fonte
 
