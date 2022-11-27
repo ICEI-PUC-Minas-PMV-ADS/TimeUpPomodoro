@@ -10,6 +10,7 @@ import Info2 from '../pages/Infos/info2'
 import Info3 from '../pages/Infos/info3'
 import Info4 from '../pages/Infos/info4'
 import Time from '../pages/Timer'
+import ListaTodo from '../pages/Infos/listaTodo'
 
 
 const Stack = createNativeStackNavigator();
@@ -64,6 +65,13 @@ export default function Routes(){
             name="Info4"
             component={Info4}        
             options={{headerShown: false}}
+            />
+
+
+            <Stack.Screen
+                name="ListaTODO"
+                component={ListaTodo}        
+                options={{headerShown: false}}
             />
            
         </Stack.Navigator>

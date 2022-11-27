@@ -21,6 +21,7 @@ Será considerada a escala Likert para avaliação, de 1 a 5, sendo:
 
 Assim, quando maior a nota, maior a facilidade de uso para o usuário. Abaixo, temos, em forma de tabela, os casos de testes de usabilidade:
 
+
 |Caso de teste 01     | CX 01 - Timer |
 |-------|-------------------------
 |Objetivo do teste| Verificar se o timer regressivo do app está funcionando corretamente  |
