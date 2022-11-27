@@ -28,7 +28,7 @@ Abaixo constam os requisitos atendidos até o presente momento.
 
 ![Modal](https://user-images.githubusercontent.com/90660755/204154393-28e20993-9c3e-4fb8-a0c9-a0e5657a490e.png)
 
-### Inserir Tarefas (RF 04)
+### Inserir Tarefas (RF - 04)
 
 ![Inserir Tarefa](https://user-images.githubusercontent.com/90660755/204154626-f7488b96-98a4-4f03-8d4d-6043c0bb79b3.png)
 
@@ -36,7 +36,7 @@ Abaixo constam os requisitos atendidos até o presente momento.
 
 ![Nova Tarefa](https://user-images.githubusercontent.com/90660755/204154891-13d601c8-6095-46ff-af67-ce40ff5b346e.png)
 
-### Deletar Tarefa
+### Deletar Tarefa (RF - 08
 
 ![Excluir Tarefa](https://user-images.githubusercontent.com/90660755/204154773-3db3b82a-a452-4335-b587-5e443b367e69.png)
 
