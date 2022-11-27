@@ -32,6 +32,10 @@ Abaixo constam os requisitos atendidos até o presente momento.
 
 ![Inserir Tarefa](https://user-images.githubusercontent.com/90660755/204154626-f7488b96-98a4-4f03-8d4d-6043c0bb79b3.png)
 
+![Campo Vazio](https://user-images.githubusercontent.com/90660755/204154881-8d3a4eb8-773f-4e14-92e3-ad5f53ee3bbc.png)
+
+![Nova Tarefa](https://user-images.githubusercontent.com/90660755/204154891-13d601c8-6095-46ff-af67-ce40ff5b346e.png)
+
 ### Deletar Tarefa
 
 ![Excluir Tarefa](https://user-images.githubusercontent.com/90660755/204154773-3db3b82a-a452-4335-b587-5e443b367e69.png)
