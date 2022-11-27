@@ -36,10 +36,15 @@ Abaixo constam os requisitos atendidos até o presente momento.
 
 ![Nova Tarefa](https://user-images.githubusercontent.com/90660755/204154891-13d601c8-6095-46ff-af67-ce40ff5b346e.png)
 
-### Deletar Tarefa (RF - 08
+### Deletar Tarefa (RF - 08)
 
 ![Excluir Tarefa](https://user-images.githubusercontent.com/90660755/204154773-3db3b82a-a452-4335-b587-5e443b367e69.png)
 
+### Alarme (RF - 14)
+
+https://user-images.githubusercontent.com/90660755/204156562-a6ea2ab1-beed-4511-9a94-d626464d4856.mp4
+
+Foi selecionado o tempo para pausa de 5 segundos para a execução mais rápida do alarme.
 
 
 ## Código fonte
