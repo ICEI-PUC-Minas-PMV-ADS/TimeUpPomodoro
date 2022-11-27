@@ -20,6 +20,9 @@ Abaixo constam os requisitos atendidos até o presente momento.
 
 ![cronômetro](https://user-images.githubusercontent.com/90660755/204154049-cfdb3072-064b-4c5b-adad-8829d9170b28.png)
 
+### Modo Noturno (RF - 06)
+
+![Modo Noturno](https://user-images.githubusercontent.com/90660755/204154232-2def0951-4ad0-40da-b635-a41898dfff9f.png)
 
 ## Código fonte
 
