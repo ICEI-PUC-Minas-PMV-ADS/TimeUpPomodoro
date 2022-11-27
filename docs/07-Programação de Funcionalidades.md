@@ -12,6 +12,9 @@ Abaixo constam os requisitos atendidos até o presente momento.
 | **Requisitos Funcionais** | A Página Inicial do app consta 13 Requisitos funcionais estipulados na tabela de requisitos (RF-01, RF-02, RF-03, RF-04, RF-05, RF-06, RF-07, RF-08, RF-09, RF-10, RF-12, RF-13, RF-14)
 | **Requisitos não Funcionais** | Conforme testes os requisitos não funcionais atendidos (RNF-01, RNF-02, RNF-04, RNF05)  |
 
+### Tela Inicial (RF - 10, RF - 13)
+
+![Tela de Login](https://user-images.githubusercontent.com/90660755/204153583-98dacbe8-923e-4906-a07d-4c0ec5d3dfd3.png)
 
 ## Código fonte
 
