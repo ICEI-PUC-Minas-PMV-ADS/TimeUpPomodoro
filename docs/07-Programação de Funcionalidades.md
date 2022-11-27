@@ -43,7 +43,9 @@ https://user-images.githubusercontent.com/90660755/204156562-a6ea2ab1-beed-4511-
 
 Foi selecionado o tempo para pausa de 5 segundos para a execução mais rápida do alarme.
 
-| **Requisitos não Funcionais** | Conforme testes os requisitos não funcionais atendidos (RNF-01, RNF-02, RNF-04, RNF05)  |
+## Requisitos não funcionais
+
+Conforme testes os requisitos não funcionais atendidos (RNF-01, RNF-02, RNF-04, RNF05)  |
 
  ### Design responsivo nas interfaces gráficas (RFN - 02)
  
