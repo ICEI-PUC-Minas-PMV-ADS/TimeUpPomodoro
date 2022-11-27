@@ -18,15 +18,16 @@ const navigation = useNavigation();
     const onPressItem = (option) => {
         props.changeModalVisibility(false);
         props.setData(option);
-
-        if (option == 'Notas'){
-            navigation.navigate('Home');
-              if(option == 'Atividades'){
+        if(option == 'Atividades'){
             navigation.navigate('ListaTODO');
-
+              }
+         
+        if (option == 'Notas'){     
+                navigation.navigate('Home');;
+                  
         }
+    
     }
-
 
     const option = OPTIONS.map((option, index) => {
         return (

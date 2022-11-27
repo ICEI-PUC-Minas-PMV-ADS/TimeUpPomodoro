@@ -38,7 +38,7 @@ const styles = StyleSheet.create ({
   },
   containerHeader:{
     marginTop:'10%',
-    marginBottom:'60%',
+    marginBottom:'70%',
     paddingStart:'0%',
 
   },

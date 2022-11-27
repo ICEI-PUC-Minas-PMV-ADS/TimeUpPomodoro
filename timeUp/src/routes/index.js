@@ -70,23 +70,21 @@ export default function Routes(){
             component={Info4}        
             options={{headerShown: false}}
             />
-
-
             <Stack.Screen
                 name="ListaTODO"
                 component={ListaTodo}        
                 options={{headerShown: false}}
             />
             <Stack.Screen
-        name="Notas"
-        component={Notas}
-        options={{ headerShown: false }}
-      />
-      <Stack.Screen
-        name="Home"
-        component={Home}
-        options={{ headerShown: false }}
-      />
+              name="Notas"
+             component={Notas}
+            options={{ headerShown: false }}
+              />
+            <Stack.Screen
+            name="Home"
+            component={Home}
+            options={{ headerShown: false }}
+              />
            
         </Stack.Navigator>
           

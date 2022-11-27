@@ -6,7 +6,8 @@ import styles from '../Lista/lista-style'
 import NoteItem from '../NoteItem/noteitem'
 
 import { useNavigation } from '@react-navigation/native'
-import firebase from '../../../firebase/config'
+import { StyleSheet, View, Text, ScrollView } from react-native;
+import Home from '../../Notas/Home/home'
 
 export default function listNotes() {
   const navigation = useNavigation()
