@@ -9,9 +9,12 @@ import {
   Image,
   Switch,
   Modal,
+  Button,
+  Alert
 } from "react-native";
 import { useTheme } from "../NightMode/themes";
 import ModalPicker from "./modalPicker";
+import { Audio } from 'expo-av';
 
 export default function Time() {
   const [seconds, setSeconds] = useState(0);
@@ -36,6 +39,27 @@ export default function Time() {
   const setData = (option) => {
     console.log(option);
   };
+
+  const [sound, setSound] = useState();
+
+  async function playSound() {
+    console.log('Loading Sound');
+    const { sound } = await Audio.Sound.createAsync( require('../../assets/alarmStatus.mp3')
+    );
+    setSound(sound);
+
+    console.log('Playing Sound');
+    await sound.playAsync();
+  }
+
+ useEffect(() => {
+    return sound
+      ? () => {
+          console.log('Unloading Sound');
+          sound.unloadAsync();
+        }
+      : undefined;
+  }, [sound]);
 
   useEffect(() => {
     if (timerRunning) return;
@@ -89,6 +113,8 @@ export default function Time() {
     setMinutes((oldMinutes) => {
       if (changeMinutes && oldMinutes == 0) {
           setIsFocus(!isFocus);
+          playSound();
+          Alert.alert('Ops!','Tempo finalizado.');
           setTimerRunning(false);
           return 0;
         }

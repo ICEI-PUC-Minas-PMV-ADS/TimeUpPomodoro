@@ -28,7 +28,7 @@ async function login(){
     let user= value.user;  
     navigation.navigate('Infos', {idUser: user.uid})
   })
- .catch(error => Alert.alert("Ops!","Usuario não encontrado!"));
+ .catch(error => Alert.alert("Ops!","Email ou senha incorretos!"));
    return;
 
 }
