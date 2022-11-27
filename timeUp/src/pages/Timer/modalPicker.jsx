@@ -6,21 +6,27 @@ import {
 import { useTheme } from "../NightMode/themes";
 import { useNavigation} from '@react-navigation/native';
 
+
 export default function ModalPicker(props) {
 const OPTIONS = ['Atividades', 'Notas']
 const WIDTH = Dimensions.get('window').width;
 const HEIGHT = Dimensions.get('window').height;
 const {dark} = useTheme();
 const navigation = useNavigation();
-    
+
     
     const onPressItem = (option) => {
         props.changeModalVisibility(false);
         props.setData(option);
+
         if (option == 'Notas'){
             navigation.navigate('Home');
+              if(option == 'Atividades'){
+            navigation.navigate('ListaTODO');
+
         }
     }
+
 
     const option = OPTIONS.map((option, index) => {
         return (
@@ -36,14 +42,13 @@ const navigation = useNavigation();
         )
     })
 
-
     return (
         <TouchableOpacity
             onPress={() => props.changeModalVisibility(false)}
             style={styles.container}
         >
             
-            <View style={[styles.modal, { width: WIDTH - 250, height: HEIGHT / 6 }]} 
+            <View style={[styles.modal, { width: WIDTH - 250, height: HEIGHT / 5 }]} 
             placeholderTextColor={ dark ? "#FFF4EF85" : "#47151585"}>
                 
                     {option}
@@ -59,8 +64,8 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        bottom:'-22%',
-        right: '22%'
+        bottom:'-25%',
+        right: '20%'
     },
     modal: {
         backgroundColor: "#FF9C9C",
