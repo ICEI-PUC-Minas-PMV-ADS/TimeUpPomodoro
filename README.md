@@ -73,4 +73,4 @@ Para acessar as atas de reunião do grupo, acessar nosso Project em [Pomodoro](h
 
 ![Image](https://user-images.githubusercontent.com/78277341/198892783-ef2949a7-867c-4b32-b3ba-51f5a7395d2c.png)
 
-![Image](https://user-images.githubusercontent.com/78277341/198892815-72706147-4f99-4730-88d2-2cd235b60329.png)
+![image](https://user-images.githubusercontent.com/78277341/204154894-f1b644fc-17ca-46a7-9bbf-c2bfd86e1dcc.png)
