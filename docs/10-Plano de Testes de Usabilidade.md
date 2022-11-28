@@ -48,6 +48,7 @@ Assim, quando maior a nota, maior a facilidade de uso para o usuário. Abaixo, t
 |Critérios de êxito| O usuário poderá excluir a meta.                                                                                                                                                     |
 |Critérios de êxito| Se  usuário sair do sistema, as metas permanecerão salvas no dispositivo.                                                                                                            |
 
+
 |Caso de teste 05    | CX 05 -  Cadastro de novo usuário |
 |-------|-------------------------
 |Objetivo do teste| Verificar se as CTA (_call to action_) e fluxo de cadastrar os serviços disponibilizados são claros para o usuário.  |
@@ -58,5 +59,7 @@ Assim, quando maior a nota, maior a facilidade de uso para o usuário. Abaixo, t
 |-------|-------------------------
 |Objetivo do teste| Verificar o fluxo de login de usuário cadastrado no aplicativo.  |
 |Ações esperadas |	1) Acessar a aplicação.  <br>  2) Clicar em "Login".  <br> 3) Inserir email e senha cadastrados. <br> 4) Login na conta. |
+|Critérios de êxito| O usuário acessa sua conta. |
+
 
 
