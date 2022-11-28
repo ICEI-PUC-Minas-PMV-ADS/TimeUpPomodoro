@@ -56,36 +56,31 @@ Estes requisitos são apresentados a seguir, acompanhados por algumas limitaçõ
 
 ### Requisitos funcionais
 
-| ID  | Descrição                                                                                                                                                                                                               | Prioridade |
-| ------------- |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------| ------------- |
-| RF-01 | O software deve apresentar na tela inicial, o progresso em horas, os projetos ou tarefas criados, ícone para acesso às listas to-do, ícone para acesso e criação de anotações e um botão para adicionar novos projetos. | Alta |
-| RF-02 | O cronômetro vem ajustado para 25 minutos de atividade e 5 de pausa.                                                                                                                                                    | Média |
-| RF-03 | O software terá uma lista to-do para marcação de tarefas realizadas.                                                                                                                                                    | Alta |
-| RF-04 | O software deve conter alternância de tema de acordo com modo diurno e nortuno.                                                                                                                                         | Média |
-| RF-05 | O software deve conter status de progresso basedo em parâmetros.                                                                                                                                                        | Média |
-| RF-06 | O software deve conter status de progresso em horas referente a cada tarefa.                                                                                                                                            | Baixa |
-| RF-07 | O software deve conter parâmetros em horas, divididos em "Total Foco", "Total Distração" e "Total Pausa".                                                                                                               | Baixa |
-| RF-08 | O software deve conter botão para acesso a um modal para adição de um novo projeto ou tarefa.                                                                                                                           | Alta |
-| RF-09 | O software deve dispor de um coutdown para visualização de progresso.                                                                                                                                                   | Média |
-| RF-10 | Os elementos da lista to-do são riscados quando concluídos.                                                                                                                                                             | Média |
-| RF-11 | Os elementos da lista to-do podem ser associados ao temporizador de tempo, garantindo a troca de atividades.                                                                                                            | Baixa |
-| RF-12 | A paleta de cores do software muda automaticamente de acordo com o horário do computador local.                                                                                                                         | Baixa |
-| RF-13 | O software deve exibir um alerta ao final de cada ciclo.                                                                                                                                                                | Média |
-| RF-14 | A tela inicial deve exibir um botão para acessar o login                                                                                                                                              | Alta |
-| RF-15 | O software deve apresentar dentro de cada tarefa ou projeto um temporizador.                                                                                                                                            | Média |
-| RF-16 | O software deve conter botão para acesso a um modal, onde o usuário poderá escrever anotações, tal como um bloco de notas.                                                                                              | Baixa |
-| RF-17 | O software deve conter uma tela com inputs para acessar  a tela de login                                                                                              | Alta|
-| RF-18 |  O software deve conter uma tela com inputs para cadastro de usuário                                                                                            | Alta |
+| ID    | Descrição                                                                           | Prioridade |
+|-------|-------------------------------------------------------------------------------------| ------------- |
+| RF-01 | O software deve apresentar um cronômetro para acompanhamento da técnica pomodoro.   | Alta |
+| RF-02 | O cronômetro deve iniciar ajustado para 25 minutos de atividade e 5 de pausa.       | Média |
+| RF-03 | O cronômetro deve possibilitar que o usuário ajuste o tempo, conforme quiser.       | Média |
+| RF-04 | O software terá um input na lista to-do inserir tarefas.                        | Alta |
+| RF-05 | O software terá uma lista to-do para marcação de tarefas realizadas.            | Alta |
+| RF-06 | O software deve possibilitar mudança para o modo nortuno.                           | Média |
+| RF-07 | O software deve conter botão para acesso a um modal para acesso das Atividades. | Alta |
+| RF-08 | Os elementos da lista to-do podem ser excluídos quando concluídos.                  | Média |
+| RF-09 | O software deve exibir um alerta ao final de cada ciclo.                        | Média |
+| RF-10 | A tela inicial deve exibir um botão para acessar o login                        | Alta |
+| RF-11 | O software deve conter botão para acesso a um modal, acessar um bloco de notas.     | Baixa |
+| RF-12 | O software deve conter uma tela com inputs para acessar a tela de login         | Alta|
+| RF-13 | O software deve conter uma tela com inputs para cadastro de usuário             | Alta |
+| RF-14 | O software deve tocar um alarme ao fim do tempo estabelecido pelo usuário.          | Alta |
 
 ### Requisitos não-funcionais
 
-| ID  | Descrição | Prioridade |
-| ------------- | ------------- | ------------- |
-| RNF-01 | A aplicação deve ser publicada em repositório público acessível na internet. | Alta |
-| RNF-02 | Uso de design responsivo nas interfaces gráficas.  | Alta |
-| RNF-03 | O som do temporizador deve variar de acordo com as configurações do dispositivo. | Baixa |
+| ID  | Descrição                                                                                  | Prioridade |
+| ------------- |--------------------------------------------------------------------------------------------| ------------- |
+| RNF-01 | A aplicação deve ser publicada em repositório público acessível na internet.               | Alta |
+| RNF-02 | Uso de design responsivo nas interfaces gráficas.                                          | Alta |
 | RNF-04 | Será possível o ajuste de tempo das terefas ou projetos conforme a necessidade do usuário. | Média |
-| RNF-05 | O software deverá armazenar as informações descritas ou selecionas pelo usuário. | Média |
+| RNF-05 | O software deverá armazenar as informações descritas ou selecionas pelo usuário.           | Média |
 
 ## Restrições
 
