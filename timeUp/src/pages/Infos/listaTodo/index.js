@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet,TouchableOpacity, TextInput, FlatList, Keyboard, Alert, KeyboardAvoidingView, Platform  } from 'react-native';
+import { View, Text, StyleSheet,TouchableOpacity, TextInput, FlatList, Keyboard, Alert, KeyboardAvoidingView, Platform,Image  } from 'react-native';
 import React, { useState, useEffect } from 'react';
 import { Ionicons, MaterialIcons } from '@expo/vector-icons';
 import * as Animatable from 'react-native-animatable';
@@ -121,15 +121,17 @@ export default function  ListaTodo() {
 }
 
 const styles = StyleSheet.create({
+  
   container: {
     flex: 1,
-    backgroundColor: '#ff4c4c85',
+    backgroundColor: '#FFF4EF',
     paddingHorizontal: 20,
     paddingVertical: 20,
     marginTop: 20
   },
   Body: {
-    flex: 1
+    flex: 1,
+    
 
   },
   Form: {
@@ -140,18 +142,18 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     paddingTop: 13,
     borderTopWidth: 1,
-    borderColor: '#FA8072',
+    borderColor: '#A9A9A9',
       
   },
   Input: {
     flex: 1,
     height: 40,
-    backgroundColor: '#FFFAFA',
+    backgroundColor: '#FFFFFF',
     borderRadius: 4,
     paddingVertical: 5,
     paddingHorizontal: 10,
     borderEndWidth: 1,
-    borderColor: '#FF6347'
+    borderColor: '#FFFFFF'
   },
   Button: {
     height: 40,
@@ -165,25 +167,36 @@ const styles = StyleSheet.create({
   FlatList: {
     FlatList: {
       flex: 1,
-      marginTop: 20
+      marginTop: 40,      
     }
+  },
+  wrapper: {
+    flex: 1,
+  },
+  containerLogo: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "space-between",
+    margin: 20,
+    marginTop: 40,
+    marginBottom: 5,
   },
   ContainerView: {
     marginBottom: 15,
     padding: 15,
     borderRadius: 4,
-    backgroundColor: '#eee',
+    backgroundColor: '#FFFFFF',
 
     display: 'flex',
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
     borderWidth: 1,
-    borderColor: '#eee'
+    borderColor: '#FF0000',
 
   },
   Texto: {
-    fontSize: 14,
+    fontSize: 24,
     color: '#333',
     fontWeight: 'bold',
     marginTop: 4,
