@@ -1,29 +1,29 @@
 import React from 'react'
 import {
-    StyleSheet, Text, View, 
+    StyleSheet, Text, View,
     TouchableOpacity, Dimensions,
 } from 'react-native'
 import { useTheme } from "../NightMode/themes";
-import { useNavigation} from '@react-navigation/native';
+import { useNavigation } from '@react-navigation/native';
 
 
 export default function ModalPicker(props) {
-const OPTIONS = ['Atividades', 'Notas']
-const WIDTH = Dimensions.get('window').width;
-const HEIGHT = Dimensions.get('window').height;
-const {dark} = useTheme();
-const navigation = useNavigation();
+    const OPTIONS = ['Atividades', 'Notas']
+    const WIDTH = Dimensions.get('window').width;
+    const HEIGHT = Dimensions.get('window').height;
+    const { dark } = useTheme();
+    const navigation = useNavigation();
 
-    
-    const onPressItem = (option) => {
+
+    const onPressItem = (o) => {
         props.changeModalVisibility(false);
-        props.setData(option);
+        props.setData(o);
 
-        if (option == 'Notas'){
+        if (o == 'Notas') {
             navigation.navigate('Home');
-              if(option == 'Atividades'){
-            navigation.navigate('ListaTODO');
-
+            if (o == 'Atividades') {
+                navigation.navigate('ListaTODO');
+            }
         }
     }
 
@@ -47,12 +47,12 @@ const navigation = useNavigation();
             onPress={() => props.changeModalVisibility(false)}
             style={styles.container}
         >
-            
-            <View style={[styles.modal, { width: WIDTH - 250, height: HEIGHT / 5 }]} 
-            placeholderTextColor={ dark ? "#FFF4EF85" : "#47151585"}>
-                
-                    {option}
-                
+
+            <View style={[styles.modal, { width: WIDTH - 250, height: HEIGHT / 5 }]}
+                placeholderTextColor={dark ? "#FFF4EF85" : "#47151585"}>
+
+                {option}
+
             </View>
         </TouchableOpacity>
     )
@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        bottom:'-25%',
+        bottom: '-25%',
         right: '20%'
     },
     modal: {
@@ -80,5 +80,4 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: 'bold'
     }
-
 })

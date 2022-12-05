@@ -9,13 +9,21 @@ import {
   Image,
   Switch,
   Modal,
-  Button,
 } from "react-native";
 import { useTheme } from "../NightMode/themes";
 import ModalPicker from "./modalPicker";
 import { Audio } from 'expo-av';
+import { useNavigation } from "@react-navigation/native";
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+
+import StickyNote from "../../components/StickyNote";
+import Draggable from 'react-native-draggable';
+import { Dimensions } from 'react-native';
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 export default function Time() {
+  const navigation = useNavigation();
+
   const [seconds, setSeconds] = useState(0);
   const [minutes, setMinutes] = useState(25);
   const [customInterval, setCustomInterval] = useState();
@@ -43,7 +51,7 @@ export default function Time() {
 
   async function playSound() {
     console.log('Loading Sound');
-    const { sound } = await Audio.Sound.createAsync( require('../../assets/alarmStatus.mp3')
+    const { sound } = await Audio.Sound.createAsync(require('../../assets/alarmStatus.mp3')
     );
     setSound(sound);
 
@@ -51,12 +59,12 @@ export default function Time() {
     await sound.playAsync();
   }
 
- useEffect(() => {
+  useEffect(() => {
     return sound
       ? () => {
-          console.log('Unloading Sound');
-          sound.unloadAsync();
-        }
+        console.log('Unloading Sound');
+        sound.unloadAsync();
+      }
       : undefined;
   }, [sound]);
 
@@ -104,18 +112,18 @@ export default function Time() {
     let changeMinutes = false;
     setSeconds((oldSeconds) => {
       if (oldSeconds == 0) {
-          changeMinutes = true;
-          return 59;
+        changeMinutes = true;
+        return 59;
       }
       return oldSeconds - 1;
     });
     setMinutes((oldMinutes) => {
       if (changeMinutes && oldMinutes == 0) {
-          setIsFocus(!isFocus);
-          playSound();
-          setTimerRunning(false);
-          return 0;
-        }
+        setIsFocus(!isFocus);
+        playSound();
+        setTimerRunning(false);
+        return 0;
+      }
       if (changeMinutes) return oldMinutes - 1;
       return oldMinutes;
     });
@@ -127,139 +135,199 @@ export default function Time() {
     dark ? setScheme("light") : setScheme("dark");
   };
 
+  const openStickyNotes = () => {
+    navigation.navigate('StickyNotes')
+  }
+
+  const [notes, setNotes] = useState([])
+  const [fullList, setFullList] = useState([])
+
+  useEffect(() => {
+    getNotesList()
+    const updateStickyNotesList = navigation.addListener('focus', () => {
+      getNotesList()
+    })
+    return updateStickyNotesList
+  }, [])
+
+  const getNotesList = async () => {
+    try {
+      const value = await AsyncStorage.getItem('stickyNotesList')
+      setFullList(JSON.parse(value))
+      formatNotesList(JSON.parse(value))
+    } catch (e) {
+      console.log(e)
+    }
+  }
+
+  const storeNotesList = async (value) => {
+    try {
+      await AsyncStorage.setItem('stickyNotesList', JSON.stringify(value))
+    } catch (e) {
+      console.log(e)
+    }
+  }
+
+  const formatNotesList = (stickyNotesList) => {
+    const filtered = stickyNotesList.filter((note) => note.pinned)
+    setNotes(filtered)
+  }
+
+  function saveNotes(value) {
+    storeNotesList(value)
+    getNotesList()
+  }
+
+  const windowHeight = Dimensions.get('window').height;
+
   return (
-    <View style={[styles.wrapper, { backgroundColor: colors.background }]}>
-      <View style={styles.containerLogo}>
-        <Image
-          source={
-            dark === true
-              ? require("../../assets/logonight.png")
-              : require("../../assets/logoTimeUp.png")
-          }
-        />
-        <Switch
-          trackColor={{ false: "#FF4C4C", true: "#FF9C9C" }}
-          value={dark}
-          onValueChange={toggleTheme}
-        />
-      </View>
+    <View style={{ height: windowHeight }}>
+      {notes.length > 0 && notes.slice(0, 3).map((item, index) => {
+        return (
+          <View style={{ position: "absolute", zIndex: 1 }} key={item.id}>
+            <Draggable x={0} y={index * 230}>
+              <StickyNote data={item} notes={fullList} saveNotes={saveNotes} />
+            </Draggable>
+          </View>
+        )
+      })}
+      <View style={[styles.wrapper, { backgroundColor: colors.background }]}>
+        <View style={styles.containerLogo}>
+          <Image
+            source={
+              dark === true
+                ? require("../../assets/logonight.png")
+                : require("../../assets/logoTimeUp.png")
+            }
+          />
+          <Switch
+            trackColor={{ false: "#FF4C4C", true: "#FF9C9C" }}
+            value={dark}
+            onValueChange={toggleTheme}
+          />
+        </View>
 
-      <View style={styles.containerTimer}>
-        <Text style={[styles.textTimer, { color: colors.text }]}>
-          {("0" + minutes).slice(-2)}:{("0" + seconds).slice(-2)}
-        </Text>
-        <View style={styles.buttonContainer}>
-          <TouchableOpacity
-            style={[
-              styles.secondaryButton,
-              { backgroundColor: colors.secondary },
-            ]}
-            onPress={() => changeModalVisibility(true)}
-          >
-            <Image
-              source={require("../../assets/iconConfig.png")}
-              style={styles.buttonIcon}
-            />
-            <Text>{chooseData}</Text>
-            <Modal
-              transparent={true}
-              animationType="fade"
-              visible={isModalVisible}
-              nRequestClose={() => changeModalVisibility(false)}
+        <View style={styles.containerTimer}>
+          <Text style={[styles.textTimer, { color: colors.text }]}>
+            {("0" + minutes).slice(-2)}:{("0" + seconds).slice(-2)}
+          </Text>
+          <View style={styles.buttonContainer}>
+            <TouchableOpacity
+              style={[
+                styles.secondaryButton,
+                { backgroundColor: colors.secondary },
+              ]}
+              onPress={() => changeModalVisibility(true)}
             >
-              <ModalPicker
-                changeModalVisibility={changeModalVisibility}
-                setData={setData}
-              />
-            </Modal>
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            style={[styles.primaryButton, { backgroundColor: colors.primary }]}
-            onPress={variantTimer}
-          >
-            {timerRunning ? (
               <Image
-                source={require("../../assets/Pause.png")}
-                style={styles.buttonIconPrimary}
+                source={require("../../assets/iconConfig.png")}
+                style={styles.buttonIcon}
               />
-            ) : (
+              <Text>{chooseData}</Text>
+              <Modal
+                transparent={true}
+                animationType="fade"
+                visible={isModalVisible}
+                nRequestClose={() => changeModalVisibility(false)}
+              >
+                <ModalPicker
+                  changeModalVisibility={changeModalVisibility}
+                  setData={setData}
+                />
+              </Modal>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={[styles.primaryButton, { backgroundColor: colors.primary }]}
+              onPress={variantTimer}
+            >
+              {timerRunning ? (
+                <Image
+                  source={require("../../assets/Pause.png")}
+                  style={styles.buttonIconPrimary}
+                />
+              ) : (
+                <Image
+                  source={require("../../assets/play.png")}
+                  style={styles.buttonIconPrimary}
+                />
+              )}
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={[
+                styles.secondaryButton,
+                { backgroundColor: colors.secondary },
+              ]}
+              onPress={clear}
+            >
               <Image
-                source={require("../../assets/play.png")}
-                style={styles.buttonIconPrimary}
+                source={require("../../assets/skip-new.png")}
+                style={styles.buttonIcon}
               />
-            )}
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            style={[
-              styles.secondaryButton,
-              { backgroundColor: colors.secondary },
-            ]}
-            onPress={clear}
-          >
-            <Image
-              source={require("../../assets/skip-new.png")}
-              style={styles.buttonIcon}
-            />
-          </TouchableOpacity>
-        </View>
-
-        <View style={styles.containerInputTimer}>
-          <View style={styles.inputTimer}>
-            <Text style={[styles.textInputTimer, { color: colors.text }]}>
-              Foco (minutos : segundos):
-            </Text>
-            <TextInput
-              style={[styles.textInputValue, { color: colors.text }]}
-              maxLength={2}
-              onChangeText={setMinutesFocus}
-              value={minutesFocus}
-              placeholder="25"
-              placeholderTextColor={dark ? "#FFF4EF85" : "#47151585"}
-            />
-            <Text style={[styles.textInputTimer, { color: colors.text }]}>
-              {" "}
-              :{" "}
-            </Text>
-            <TextInput
-              style={[styles.textInputValue, { color: colors.text }]}
-              maxLength={2}
-              onChangeText={setSecondsFocus}
-              value={secondsFocus}
-              placeholder="00"
-              placeholderTextColor={dark ? "#FFF4EF85" : "#47151585"}
-            />
+            </TouchableOpacity>
           </View>
 
-          <View style={styles.inputTimer}>
-            <Text style={[styles.textInputTimer, { color: colors.text }]}>
-              Pausa (minutos : segundos):
-            </Text>
-            <TextInput
-              style={[styles.textInputValue, { color: colors.text }]}
-              maxLength={2}
-              onChangeText={setMinutesBreak}
-              value={minutesBreak}
-              placeholder="05"
-              placeholderTextColor={dark ? "#FFF4EF85" : "#47151585"}
-            />
-            <Text style={[styles.textInputTimer, { color: colors.text }]}>
-              {" "}
-              :{" "}
-            </Text>
-            <TextInput
-              style={[styles.textInputValue, { color: colors.text }]}
-              maxLength={2}
-              onChangeText={setSecondsBreak}
-              value={secondsBreak}
-              placeholder="00"
-              placeholderTextColor={dark ? "#FFF4EF85" : "#47151585"}
-            />
-          </View>
-        </View>
+          <View style={styles.containerInputTimer}>
+            <View style={styles.inputTimer}>
+              <Text style={[styles.textInputTimer, { color: colors.text }]}>
+                Foco (minutos : segundos):
+              </Text>
+              <TextInput
+                style={[styles.textInputValue, { color: colors.text }]}
+                maxLength={2}
+                onChangeText={setMinutesFocus}
+                value={minutesFocus}
+                placeholder="25"
+                placeholderTextColor={dark ? "#FFF4EF85" : "#47151585"}
+              />
+              <Text style={[styles.textInputTimer, { color: colors.text }]}>
+                {" "}
+                :{" "}
+              </Text>
+              <TextInput
+                style={[styles.textInputValue, { color: colors.text }]}
+                maxLength={2}
+                onChangeText={setSecondsFocus}
+                value={secondsFocus}
+                placeholder="00"
+                placeholderTextColor={dark ? "#FFF4EF85" : "#47151585"}
+              />
+            </View>
 
-        <StatusBar style="auto" />
+            <View style={styles.inputTimer}>
+              <Text style={[styles.textInputTimer, { color: colors.text }]}>
+                Pausa (minutos : segundos):
+              </Text>
+              <TextInput
+                style={[styles.textInputValue, { color: colors.text }]}
+                maxLength={2}
+                onChangeText={setMinutesBreak}
+                value={minutesBreak}
+                placeholder="05"
+                placeholderTextColor={dark ? "#FFF4EF85" : "#47151585"}
+              />
+              <Text style={[styles.textInputTimer, { color: colors.text }]}>
+                {" "}
+                :{" "}
+              </Text>
+              <TextInput
+                style={[styles.textInputValue, { color: colors.text }]}
+                maxLength={2}
+                onChangeText={setSecondsBreak}
+                value={secondsBreak}
+                placeholder="00"
+                placeholderTextColor={dark ? "#FFF4EF85" : "#47151585"}
+              />
+            </View>
+          </View>
+
+          <StatusBar style="auto" />
+
+          <TouchableOpacity style={styles.addNoteButton} onPress={openStickyNotes}>
+            <Icon name="note-plus-outline" size={30} color="#292B2C" />
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
@@ -267,6 +335,19 @@ export default function Time() {
 const styles = StyleSheet.create({
   wrapper: {
     flex: 1,
+  },
+  addNoteButton: {
+    backgroundColor: 'lightblue',
+    height: 60,
+    width: 60,
+    borderRadius: 60,
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: "absolute",
+    right: 20,
+    bottom: 20
   },
   containerLogo: {
     display: "flex",
