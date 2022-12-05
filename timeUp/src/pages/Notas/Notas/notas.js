@@ -23,55 +23,27 @@ import {
 //import firebaseConnection from '../../../firebase/config'
 import uniqueId from '../../Notas/servico/unique-id'
 import AsyncStorage from '@react-native-async-storage/async-storage'
-import Home from '../Home/home'
+
 
 export default function Notas() {
   const navigation = useNavigation()
 
-  const [content, setContent] = useState('')
   const [title, setTitle] = useState('')
-  async function saveNote() {
-    /*useEffect(() => {
-      async function carregaDados() {
-        const content = await AsyncStorage.getContent('content')
-        const title = await AsyncStorage.getTitle('title')
-        if (content) {
-          setContent(JSON.parse(content))
-        }
-        if (title) {
-          setTitle(JSON.parse(title))
-        }
-      }
-      carregaDados()
-    }, [])*/
+  const [content, setContent] = useState('')
 
-    useEffect(
-      () => {
-        async function salvaDados() {
-          AsyncStorage.setContent('content', JSON.stringify(content))
-          AsyncStorage.setTitle('title', JSON.stringify(title))
-        }
-        salvaDados()
-      },
-      [content],
-      [title]
-    )
+  function handleTitleChange(title){  setTitle(title); }
+  function handleContentChange(content){ setContent(content); }
 
-    /*async function saveNote(id) {
-    if (id === undefined) {
-      id = uniqueId()
-    }
-
-    await firebaseConnection
-      .database()
-      .ref('Notas/' + id.toString())
-      .set({
-        title,
-        content
-      })
-      .then(navigation.navigate('home'))*/
+  async function  saveNote(){
+    const listItem = {id: new Date().getTime(), title, quantidade};
+    let savedItems = [];
+    const response = await AsyncStorage.getItem(itens);
+    
+    if(response) savedItems = JSON.parse(response);
+    savedItems.push(listItem);
+    await AsyncStorage.setItem(itens, JSON.stringify(savedItems));
+    navigation.navigate('Home', listItem);
   }
-
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -83,7 +55,6 @@ export default function Notas() {
           <TouchableOpacity
             style={styles.button}
             onPress={() => saveNote()}
-            onPressIn={Home}
           >
             <Text style={styles.textButton}>Save</Text>
           </TouchableOpacity>
@@ -95,7 +66,7 @@ export default function Notas() {
           style={styles.title}
           placeholder="Titulo"
           value={title}
-          onChangeText={value => setTitle(value)}
+          onChangeText={handleTitleChange}
         />
 
         <KeyboardAvoidingView behavior="padding">
@@ -104,7 +75,7 @@ export default function Notas() {
             style={styles.content}
             multiline={true}
             value={content}
-            onChangeText={value => setContent(value)}
+            onChangeText={handleContentChange}
           />
         </KeyboardAvoidingView>
       </View>

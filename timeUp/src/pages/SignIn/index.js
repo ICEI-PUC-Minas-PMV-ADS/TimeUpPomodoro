@@ -22,7 +22,6 @@ export default function SignIn() {
   };
 
   async function login() {
-    navigation.navigate('Time')
     await signInWithEmailAndPassword(auth, email, password)
       .then(value => {
         let user = value.user;

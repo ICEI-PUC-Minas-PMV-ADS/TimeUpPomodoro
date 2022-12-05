@@ -119,11 +119,12 @@ export default function Time() {
     });
     setMinutes((oldMinutes) => {
       if (changeMinutes && oldMinutes == 0) {
-        setIsFocus(!isFocus);
-        playSound();
-        setTimerRunning(false);
-        return 0;
-      }
+          setIsFocus(!isFocus);
+          playSound();
+          Alert.alert('Ops!','Tempo finalizado.');
+          setTimerRunning(false);
+          return 0;
+        }
       if (changeMinutes) return oldMinutes - 1;
       return oldMinutes;
     });

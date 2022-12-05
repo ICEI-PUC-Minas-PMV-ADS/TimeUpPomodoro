@@ -15,18 +15,19 @@ export default function ModalPicker(props) {
     const navigation = useNavigation();
 
 
-    const onPressItem = (o) => {
+    const onPressItem = (option) => {
         props.changeModalVisibility(false);
-        props.setData(o);
-
-        if (o == 'Notas') {
-            navigation.navigate('Home');
-            if (o == 'Atividades') {
-                navigation.navigate('ListaTODO');
-            }
-        }
+        props.setData(option);
+        if(option == 'Atividades'){
+            navigation.navigate('ListaTODO');
+              }
+         
+       /* if (option == 'Notas'){     
+                navigation.navigate('Home');;
+                  
+        }*/
+    
     }
-
 
     const option = OPTIONS.map((option, index) => {
         return (

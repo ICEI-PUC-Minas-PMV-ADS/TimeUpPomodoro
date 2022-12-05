@@ -53,5 +53,47 @@ export default StyleSheet.create({
   },
   icon: {
     color: '#d85a2c'
-  }
+  },
+  buttonsContainer: {
+  
+    alignItems:'flex-end' ,
+    borderBottomWidth: 1,
+    borderBottomColor: '#d85a2',
+    paddingBottom: 10,
+    marginTop: 10,
+},
+editButton: {
+    marginLeft: 10,
+    height: 40,
+    width: 60,
+    backgroundColor: 'blue',
+    borderRadius: 10,
+    padding: 10,
+    fontSize: 12,
+    elevation: 10,
+    shadowOpacity: 10,
+    shadowColor: '#d85a2',
+    alignItems: 'center',
+},
+deleteButton: {
+    marginLeft: 10,
+    height: 40,
+    width: 40,
+    backgroundColor: 'red',
+    borderRadius: 10,
+    padding: 10,
+    fontSize: 12,
+    elevation: 10,
+    shadowOpacity: 10,
+    shadowColor: '#d85a2',
+    alignItems: 'center'
+},
+buttonText: {
+    color:'#fff',
+    fontWeight:' bold',
+},
+textItem: {
+    fontSize: 20,
+}
+
 })

@@ -60,17 +60,7 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 
 <li><a href="presentation/README.md"> Apresentação da solução</a></li>
 
-# Retrato atual do status das contribuições dos membros do time:
 
-As atividades foram distribuídas e gerenciadas pelo **[Planner](https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=ca2f5986-86cc-4dbf-9c21-b586a491ced9&planId=h_Q9NmwXaUijvknhEUY8bWQAEcmA)**. 
-Para verificar o andamento de cada atividade, bem como o desenvolvimento do projeto e as atividades atribuídas a cada membro do grupo, basta acessar nosso perfil no Planner [aqui](https://tasks.office.com/sgapucminasbr.onmicrosoft.com/pt-BR/Home/Planner/#/plantaskboard?groupId=ca2f5986-86cc-4dbf-9c21-b586a491ced9&planId=h_Q9NmwXaUijvknhEUY8bWQAEcmA). 
 
-As imagens a seguir, demonstram o fluxo de trabalho atualizado aos dia 30.10.2022. 
+https://user-images.githubusercontent.com/78277341/204905785-3b1e57e1-3874-4101-9c43-36ab12f355c6.mp4
 
-Para acessar as atas de reunião do grupo, acessar nosso Project em [Pomodoro](https://github.com/ICEI-PUC-Minas-PMV-ADS/Pomodoro/projects/3). 
-
-![Image](https://user-images.githubusercontent.com/78277341/198892757-08cadc72-4b01-42af-a677-cbbc1bb9a958.png)
-
-![Image](https://user-images.githubusercontent.com/78277341/198892783-ef2949a7-867c-4b32-b3ba-51f5a7395d2c.png)
-
-![Image](https://user-images.githubusercontent.com/78277341/198892815-72706147-4f99-4730-88d2-2cd235b60329.png)
