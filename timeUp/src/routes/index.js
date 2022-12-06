@@ -1,5 +1,5 @@
-import { createNativeStackNavigator} from '@react-navigation/native-stack'
-import * as React from 'react';
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
+import * as React from 'react'
 
 import Welcome from '../pages/Welcome'
 import SignIn from '../pages/SignIn'
@@ -10,10 +10,14 @@ import Info2 from '../pages/Infos/info2'
 import Info3 from '../pages/Infos/info3'
 import Info4 from '../pages/Infos/info4'
 import Time from '../pages/Timer'
+
 import ListaTodo from '../pages/Infos/listaTodo'
+import Home from '../pages/Notas/Home/home'
+import Notas from '../pages/Notas/Notas/notas'
 
 
-const Stack = createNativeStackNavigator();
+const Stack = createNativeStackNavigator()
+
 
 export default function Routes(){
     return(
@@ -66,13 +70,21 @@ export default function Routes(){
             component={Info4}        
             options={{headerShown: false}}
             />
-
-
             <Stack.Screen
                 name="ListaTODO"
                 component={ListaTodo}        
                 options={{headerShown: false}}
             />
+            <Stack.Screen
+              name="Notas"
+             component={Notas}
+            options={{ headerShown: false }}
+              />
+            <Stack.Screen
+            name="Home"
+            component={Home}
+            options={{ headerShown: false }}
+              />
            
         </Stack.Navigator>
           
@@ -80,3 +92,4 @@ export default function Routes(){
     )
 
 }
+
