@@ -131,6 +131,7 @@ export default function Time() {
   };
 
   return (
+    
     <View style={[styles.wrapper, { backgroundColor: colors.background }]}>
       <ScrollView>
         <View style={styles.containerLogo}>
@@ -241,36 +242,67 @@ export default function Time() {
               />
             </View>
 
-            <View style={styles.inputTimer}>
-              <Text style={[styles.textInputTimer, { color: colors.text }]}>
-                Pausa (minutos : segundos):
-              </Text>
-              <TextInput
-                style={[styles.textInputValue, { color: colors.text }]}
-                maxLength={2}
-                onChangeText={setMinutesBreak}
-                value={minutesBreak}
-                placeholder="05"
-                placeholderTextColor={dark ? "#FFF4EF85" : "#47151585"}
-                keyboardType="numeric"
-              />
-              <Text style={[styles.textInputTimer, { color: colors.text }]}>
-                {" "}
-                :{" "}
-              </Text>
-              <TextInput
-                style={[styles.textInputValue, { color: colors.text }]}
-                maxLength={2}
-                onChangeText={setSecondsBreak}
-                value={secondsBreak}
-                placeholder="00"
-                placeholderTextColor={dark ? "#FFF4EF85" : "#47151585"}
-                keyboardType="numeric"
-              />
+
+            <View style={styles.containerInputTimer}>
+              <View style={styles.inputTimer}>
+                <Text style={[styles.textInputTimer, { color: colors.text }]}>
+                  Foco (minutos : segundos):
+                </Text>
+                <TextInput
+                  style={[styles.textInputValue, { color: colors.text }]}
+                  maxLength={2}
+                  onChangeText={setMinutesFocus}
+                  value={minutesFocus}
+                  placeholder="25"
+                  placeholderTextColor={dark ? "#FFF4EF85" : "#47151585"}
+                  keyboardtyper="numeric"
+                
+                />
+                <Text style={[styles.textInputTimer, { color: colors.text }]}>
+                  {" "}
+                  :{" "}
+                </Text>
+                <TextInput
+                  style={[styles.textInputValue, { color: colors.text }]}
+                  maxLength={2}
+                  onChangeText={setSecondsFocus}
+                  value={secondsFocus}
+                  placeholder="00"
+                  placeholderTextColor={dark ? "#FFF4EF85" : "#47151585"}
+                  keyboardtyper="numeric"
+                />
+              </View>
+
+              <View style={styles.inputTimer}>
+                <Text style={[styles.textInputTimer, { color: colors.text }]}>
+                  Pausa (minutos : segundos):
+                </Text>
+                <TextInput
+                  style={[styles.textInputValue, { color: colors.text }]}
+                  maxLength={2}
+                  onChangeText={setMinutesBreak}
+                  value={minutesBreak}
+                  placeholder="05"
+                  placeholderTextColor={dark ? "#FFF4EF85" : "#47151585"}
+                  keyboardtyper="numeric"
+                />
+                <Text style={[styles.textInputTimer, { color: colors.text }]}>
+                  {" "}
+                  :{" "}
+                </Text>
+                <TextInput
+                  style={[styles.textInputValue, { color: colors.text }]}
+                  maxLength={2}
+                  onChangeText={setSecondsBreak}
+                  value={secondsBreak}
+                  placeholder="00"
+                  placeholderTextColor={dark ? "#FFF4EF85" : "#47151585"}
+                  keyboardtyper="numeric"
+                />
+              </View>
+
             </View>
           </View>
-
-          <StatusBar style="auto" />
         </View>
       </ScrollView>
     </View>
