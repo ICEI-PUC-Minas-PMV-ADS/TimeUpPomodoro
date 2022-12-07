@@ -24,25 +24,28 @@ import {
 import uniqueId from '../../Notas/servico/unique-id'
 import AsyncStorage from '@react-native-async-storage/async-storage'
 
-
 export default function Notas() {
   const navigation = useNavigation()
 
   const [title, setTitle] = useState('')
   const [content, setContent] = useState('')
 
-  function handleTitleChange(title){  setTitle(title); }
-  function handleContentChange(content){ setContent(content); }
+  function handleTitleChange(title) {
+    setTitle(title)
+  }
+  function handleContentChange(content) {
+    setContent(content)
+  }
 
-  async function  saveNote(){
-    const listItem = {id: new Date().getTime(), title, quantidade};
-    let savedItems = [];
-    const response = await AsyncStorage.getItem(itens);
-    
-    if(response) savedItems = JSON.parse(response);
-    savedItems.push(listItem);
-    await AsyncStorage.setItem(itens, JSON.stringify(savedItems));
-    navigation.navigate('Home', listItem);
+  async function saveNote() {
+    const listItem = { id: new Date().getTime(), title, quantidade }
+    let savedItems = []
+    const response = await AsyncStorage.getItem(itens)
+
+    if (response) savedItems = JSON.parse(response)
+    savedItems.push(listItem)
+    await AsyncStorage.setItem(itens, JSON.stringify(savedItems))
+    navigation.navigate('Home', listItem)
   }
   return (
     <View style={styles.container}>
@@ -52,10 +55,7 @@ export default function Notas() {
         </View>
 
         <View style={styles.actionButtons} size={28}>
-          <TouchableOpacity
-            style={styles.button}
-            onPress={() => saveNote()}
-          >
+          <TouchableOpacity style={styles.button} onPress={() => saveNote()}>
             <Text style={styles.textButton}>Save</Text>
           </TouchableOpacity>
         </View>
