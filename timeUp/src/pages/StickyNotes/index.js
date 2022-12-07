@@ -1,25 +1,25 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from 'react'
 import {
   Text,
   View,
   StyleSheet,
   TouchableOpacity,
   FlatList
-} from "react-native";
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
-import StickyNote from "../../components/StickyNote";
+} from 'react-native'
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
+import StickyNote from '../../components/StickyNote'
 import AsyncStorage from '@react-native-async-storage/async-storage'
-import uuid from 'react-native-uuid';
+import uuid from 'react-native-uuid'
 
 export default function StickyNotes() {
-  const [notes, setNotes] = useState()
+  const [notes, setNotes] = useState([])
 
   useEffect(() => {
     getNotesList()
     storePinnedNotes()
   }, [])
 
-  function saveNotes(value){
+  function saveNotes(value) {
     setNotes(value)
     storeNotesList(value)
   }
@@ -27,18 +27,21 @@ export default function StickyNotes() {
   const storePinnedNotes = async () => {
     try {
       const pinned = []
-      notes.map((note)=>{
-        if(note.pinned){
-          pinned.push(note.id)
-        }
-      })
+      if (notes) {
+        console.log(notes)
+        notes.map(note => {
+          if (note.pinned) {
+            pinned.push(note.id)
+          }
+        })
+      }
       await AsyncStorage.setItem('stickyNotesPinned', JSON.stringify(pinned))
     } catch (e) {
       console.log(e)
     }
   }
 
-  const getNotesList = async () => {
+  async function getNotesList() {
     try {
       const value = await AsyncStorage.getItem('stickyNotesList')
       setNotes(JSON.parse(value))
@@ -47,7 +50,7 @@ export default function StickyNotes() {
     }
   }
 
-  const storeNotesList = async (value) => {
+  const storeNotesList = async value => {
     try {
       await AsyncStorage.setItem('stickyNotesList', JSON.stringify(value))
     } catch (e) {
@@ -56,7 +59,7 @@ export default function StickyNotes() {
   }
 
   const addEmpty = () => {
-    const newNotes = [...notes]
+    const newNotes = notes ? [...notes] : []
     newNotes.unshift({
       id: uuid.v4(),
       title: '',
@@ -71,21 +74,28 @@ export default function StickyNotes() {
       <FlatList
         style={styles.wrapper}
         data={notes}
-        renderItem={(note) => <StickyNote key={note.id} data={note} notes={notes} saveNotes={saveNotes} />}
+        renderItem={note => (
+          <StickyNote
+            key={note.id}
+            data={note}
+            notes={notes}
+            saveNotes={saveNotes}
+          />
+        )}
       />
       <TouchableOpacity style={styles.addButton} onPress={addEmpty}>
-        <Icon name="note-plus-outline" size={20} color="#292B2C" />
+        <Icon name="note-plus-outline" size={20} color="#FF4C4C" />
         <Text style={styles.addButtonText}>ADICIONAR STICKY NOTE </Text>
       </TouchableOpacity>
     </View>
-  );
+  )
 }
 const styles = StyleSheet.create({
   wrapper: {
-    flex: 1,
+    flex: 1
   },
   addButton: {
-    backgroundColor: 'lightblue',
+    backgroundColor: '#FF9C9C',
     padding: 10,
     borderRadius: 20,
     width: 250,
@@ -100,4 +110,4 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     marginLeft: 10
   }
-});
+})
