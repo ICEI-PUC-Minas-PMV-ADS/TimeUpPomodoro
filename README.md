@@ -31,8 +31,11 @@ Esses intervalos – chamados pomodoros – são tradicionalmente de 25 minutos 
 
 
 ## Instruções de utilização
+🍅 1 - Instale o expo go em seu aparelho;
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+🍅 2 - Leia o Qr code na pagina a seguir: https://expo.dev/%40kaamovic/project-app?serviceType=classic&distribution=expo-go&releaseChannel=default
+
+🍅 3 - Agora basta se inscrever e logar para fazer a utilizção do app. 
 
 # Documentação
 

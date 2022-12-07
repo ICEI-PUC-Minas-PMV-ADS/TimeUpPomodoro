@@ -8,18 +8,19 @@ import {
   TouchableOpacity,
   Image,
   Switch,
-  Modal
-} from 'react-native'
-import { useTheme } from '../NightMode/themes'
-import ModalPicker from './modalPicker'
-import { Audio } from 'expo-av'
-import { useNavigation } from '@react-navigation/native'
+  Modal,
+  ScrollView,
+  Alert
+} from "react-native";
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
-
 import StickyNote from '../../components/StickyNote'
 import Draggable from 'react-native-draggable'
 import { Dimensions } from 'react-native'
-import AsyncStorage from '@react-native-async-storage/async-storage'
+import { useTheme } from "../NightMode/themes";
+import ModalPicker from "./modalPicker";
+import { Audio } from "expo-av";
+import { useNavigation } from '@react-navigation/native'
+
 
 export default function Time() {
   const navigation = useNavigation()
@@ -50,21 +51,23 @@ export default function Time() {
   const [sound, setSound] = useState()
 
   async function playSound() {
-    console.log('Loading Sound')
-    const { sound } = await Audio.Sound.createAsync(
-      require('../../assets/alarmStatus.mp3')
-    )
-    setSound(sound)
 
-    console.log('Playing Sound')
-    await sound.playAsync()
-  }
+    console.log("Loading Sound");
+    const { sound } = await Audio.Sound.createAsync(
+      require("../../assets/alarmStatus.mp3")
+    );
+    setSound(sound);
+
+    console.log("Playing Sound");
+    await sound.playAsync();
+
 
   useEffect(() => {
     return sound
       ? () => {
-          console.log('Unloading Sound')
-          sound.unloadAsync()
+
+          console.log("Unloading Sound");
+          sound.unloadAsync();
         }
       : undefined
   }, [sound])
@@ -113,8 +116,10 @@ export default function Time() {
     let changeMinutes = false
     setSeconds(oldSeconds => {
       if (oldSeconds == 0) {
-        changeMinutes = true
-        return 59
+
+        changeMinutes = true;
+        return 59;
+
       }
       return oldSeconds - 1
     })
@@ -183,6 +188,7 @@ export default function Time() {
   const windowHeight = Dimensions.get('window').height
 
   return (
+
     <View style={{ height: windowHeight }}>
       {notes.length > 0 &&
         notes.slice(0, 3).map((item, index) => {
@@ -198,17 +204,21 @@ export default function Time() {
             </View>
           )
         })}
-      <View style={[styles.wrapper, { backgroundColor: colors.background }]}>
+    <View style={[styles.wrapper, { backgroundColor: colors.background }]}>
+      <ScrollView>
+
         <View style={styles.containerLogo}>
           <Image
             source={
               dark === true
-                ? require('../../assets/logonight.png')
-                : require('../../assets/logoTimeUp.png')
+
+                ? require("../../assets/logonight.png")
+                : require("../../assets/logoTimeUp.png")
             }
           />
           <Switch
-            trackColor={{ false: '#FF4C4C', true: '#FF9C9C' }}
+            trackColor={{ false: "#FF4C4C", true: "#FF9C9C" }}
+
             value={dark}
             onValueChange={toggleTheme}
           />
@@ -216,18 +226,21 @@ export default function Time() {
 
         <View style={styles.containerTimer}>
           <Text style={[styles.textTimer, { color: colors.text }]}>
-            {('0' + minutes).slice(-2)}:{('0' + seconds).slice(-2)}
+
+            {("0" + minutes).slice(-2)}:{("0" + seconds).slice(-2)}
+
           </Text>
           <View style={styles.buttonContainer}>
             <TouchableOpacity
               style={[
                 styles.secondaryButton,
-                { backgroundColor: colors.secondary }
+
+                { backgroundColor: colors.secondary },
               ]}
               onPress={() => changeModalVisibility(true)}
             >
               <Image
-                source={require('../../assets/iconConfig.png')}
+                source={require("../../assets/iconConfig.png")}
                 style={styles.buttonIcon}
               />
               <Text>{chooseData}</Text>
@@ -247,18 +260,18 @@ export default function Time() {
             <TouchableOpacity
               style={[
                 styles.primaryButton,
-                { backgroundColor: colors.primary }
+                { backgroundColor: colors.primary },
               ]}
               onPress={variantTimer}
             >
               {timerRunning ? (
                 <Image
-                  source={require('../../assets/Pause.png')}
+                  source={require("../../assets/Pause.png")}
                   style={styles.buttonIconPrimary}
                 />
               ) : (
                 <Image
-                  source={require('../../assets/play.png')}
+                  source={require("../../assets/play.png")}
                   style={styles.buttonIconPrimary}
                 />
               )}
@@ -267,12 +280,12 @@ export default function Time() {
             <TouchableOpacity
               style={[
                 styles.secondaryButton,
-                { backgroundColor: colors.secondary }
+                { backgroundColor: colors.secondary },
               ]}
               onPress={clear}
             >
               <Image
-                source={require('../../assets/skip-new.png')}
+                source={require("../../assets/skip-new.png")}
                 style={styles.buttonIcon}
               />
             </TouchableOpacity>
@@ -289,11 +302,12 @@ export default function Time() {
                 onChangeText={setMinutesFocus}
                 value={minutesFocus}
                 placeholder="25"
-                placeholderTextColor={dark ? '#FFF4EF85' : '#47151585'}
+                placeholderTextColor={dark ? "#FFF4EF85" : "#47151585"}
+                keyboardType="numeric"
               />
               <Text style={[styles.textInputTimer, { color: colors.text }]}>
-                {' '}
-                :{' '}
+                {" "}
+                :{" "}
               </Text>
               <TextInput
                 style={[styles.textInputValue, { color: colors.text }]}
@@ -301,7 +315,8 @@ export default function Time() {
                 onChangeText={setSecondsFocus}
                 value={secondsFocus}
                 placeholder="00"
-                placeholderTextColor={dark ? '#FFF4EF85' : '#47151585'}
+                placeholderTextColor={dark ? "#FFF4EF85" : "#47151585"}
+                keyboardType="numeric"
               />
             </View>
 
@@ -315,11 +330,12 @@ export default function Time() {
                 onChangeText={setMinutesBreak}
                 value={minutesBreak}
                 placeholder="05"
-                placeholderTextColor={dark ? '#FFF4EF85' : '#47151585'}
+                placeholderTextColor={dark ? "#FFF4EF85" : "#47151585"}
+                keyboardType="numeric"
               />
               <Text style={[styles.textInputTimer, { color: colors.text }]}>
-                {' '}
-                :{' '}
+                {" "}
+                :{" "}
               </Text>
               <TextInput
                 style={[styles.textInputValue, { color: colors.text }]}
@@ -327,24 +343,19 @@ export default function Time() {
                 onChangeText={setSecondsBreak}
                 value={secondsBreak}
                 placeholder="00"
-                placeholderTextColor={dark ? '#FFF4EF85' : '#47151585'}
+                placeholderTextColor={dark ? "#FFF4EF85" : "#47151585"}
+                keyboardType="numeric"
               />
             </View>
           </View>
 
           <StatusBar style="auto" />
-
-          <TouchableOpacity
-            style={styles.addNoteButton}
-            onPress={openStickyNotes}
-          >
-            <Icon name="note-plus-outline" size={30} color="#FF4C4C" />
-          </TouchableOpacity>
         </View>
-      </View>
+      </ScrollView>
     </View>
   )
 }
+
 const styles = StyleSheet.create({
   wrapper: {
     flex: 1
