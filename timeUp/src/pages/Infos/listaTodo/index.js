@@ -1,12 +1,15 @@
-import { View, Text, StyleSheet,TouchableOpacity, TextInput, FlatList, Keyboard, Alert, KeyboardAvoidingView, Platform  } from 'react-native';
+import { View, Text, StyleSheet,TouchableOpacity, TextInput, FlatList, Keyboard, Alert, KeyboardAvoidingView, Image, Switch, Platform  } from 'react-native';
 import React, { useState, useEffect } from 'react';
 import { Ionicons, MaterialIcons } from '@expo/vector-icons';
 import * as Animatable from 'react-native-animatable';
 
 import {useNavigation} from '@react-navigation/native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+import Topo from './Topo';
+import { useTheme } from "../../NightMode/themes";
 
 export default function  ListaTodo() {
+  
   const navigation = useNavigation();
 
   const [task, setTask] = useState([]);
@@ -69,52 +72,85 @@ export default function  ListaTodo() {
     salvaDados();
   }, [task]);
 
+
+  const { dark, colors, setScheme } = useTheme();
+
+  const toggleTheme = () => {
+    dark ? setScheme("light") : setScheme("dark");
+  };
+
   return (
+    
     <>
       <KeyboardAvoidingView
         keyboardVerticalOffset={0}
         behavior="padding"
         style={{ flex: 1 }}
         enabled={Platform.OS === "ios"}
-      >
-        <View style={styles.container}>
-          <View style={styles.Body}>
-            <FlatList
-              data={task}
-              keyExtractor={item => item.toString()}
-              showsVerticalScrollIndicator={false}
-              style={styles.FlatList}
-              renderItem={({ item }) => (
-                <View style={styles.ContainerView}>
-                  <Text style={styles.Texto}>{item}</Text>
-                  <TouchableOpacity onPress={() => removeTask(item)}>
-                    <MaterialIcons
-                      name="delete-forever"
-                      size={25}
-                      color="#f64c75"
-                    />
-                  </TouchableOpacity>
-                </View>
-              )}
+      > 
+        <View style={[styles.container, { backgroundColor: colors.background }]}>
+
+        <View style={styles.containerLogo}>
+            <Image
+              source={
+                dark === true
+                  ? require("../../../assets/logonight.png")
+                  : require("../../../assets/logoTimeUp.png")
+              }
+            />
+            <Switch
+              trackColor={{ false: "#FF4C4C", true: "#FF9C9C" }}
+              value={dark}
+              onValueChange={toggleTheme}
             />
           </View>
 
-          <View style={styles.Form}>
-            <TextInput
-              style={styles.Input}
-              placeholderTextColor="#999"
-              autoCorrect={true}
-              value={newTask}
-              placeholder="Adicione uma tarefa"
-              maxLength={25}
-              onChangeText={text => setNewTask(text)}
-            />
-            <TouchableOpacity style={styles.Button} onPress={() => addTask()}>
-              <Ionicons name="ios-add" size={20} color="white" />
-            </TouchableOpacity>
+          
+        
+
+            <View style={styles.Body}>
+              <Topo style={[styles.container, { backgroundColor: colors.background }]}/>
+                
+                <FlatList
+                  data={task}
+                  keyExtractor={item => item.toString()}
+                  showsVerticalScrollIndicator={false}
+                  style={styles.FlatList}
+                  renderItem={({ item }) => (
+                    <View style={styles.ContainerView}>
+                      <Text style={styles.Texto}>{item}</Text>
+                      <TouchableOpacity onPress={() => removeTask(item)}>
+                        <MaterialIcons
+                          name="delete-forever"
+                          size={25}
+                          color="#f64c75"
+                        />
+                      </TouchableOpacity>
+                    </View>
+                  )}
+                />
+            
+            </View>
+
+            <View style={styles.Form}>
+              <TextInput
+                style={styles.Input}
+                placeholderTextColor="#999"
+                autoCorrect={true}
+                value={newTask}
+                placeholder="Adicione uma tarefa"
+                maxLength={25}
+                onChangeText={text => setNewTask(text)}
+              />
+              
+              <TouchableOpacity style={styles.Button} onPress={() => addTask()}>
+                <Ionicons name="ios-add" size={20} color="white" />
+              </TouchableOpacity>
+            </View>
           </View>
-        </View>
       </KeyboardAvoidingView>
+      
+      
     </>
     
   );
@@ -123,7 +159,7 @@ export default function  ListaTodo() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ff4c4c85',
+    backgroundColor: "#FFF4EF",
     paddingHorizontal: 20,
     paddingVertical: 20,
     marginTop: 20
