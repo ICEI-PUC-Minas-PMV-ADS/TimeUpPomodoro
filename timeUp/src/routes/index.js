@@ -24,22 +24,7 @@ export default function Routes(){
     return(
     
         <Stack.Navigator initialRouteName='Welcome'>
-        
-          <Stack.Screen
-            name="Time"
-            component={Time}        
-            options={{headerShown: false}}
-            />
-            <Stack.Screen
-              name="StickyNotes"
-              component={StickyNotes}
-              options={{ headerShown: true }}
-            />
-            <Stack.Screen
-            name="Welcome"
-            component={Welcome}
-            options={{headerShown: false}}
-            />
+      
             <Stack.Screen
             name="SignIn"
             component={SignIn}
@@ -91,6 +76,22 @@ export default function Routes(){
             component={Home}
             options={{ headerShown: false }}
               />
+              
+          <Stack.Screen
+            name="Time"
+            component={Time}        
+            options={{headerShown: false}}
+            />
+            <Stack.Screen
+              name="StickyNotes"
+              component={StickyNotes}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+            name="Welcome"
+            component={Welcome}
+            options={{headerShown: false}}
+            />
            
         </Stack.Navigator>
           

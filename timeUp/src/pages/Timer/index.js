@@ -10,15 +10,16 @@ import {
   Switch,
   Modal,
   ScrollView,
-  Alert
+  Alert,
+
 } from "react-native";
-import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
-import StickyNote from '../../components/StickyNote'
-import Draggable from 'react-native-draggable'
+import { StickyNote } from '../../components/StickyNote/index';
+import Draggable from 'react-native-draggable';
 import { Dimensions } from 'react-native'
 import { useTheme } from "../NightMode/themes";
 import ModalPicker from "./modalPicker";
 import { Audio } from "expo-av";
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons'
 import { useNavigation } from '@react-navigation/native'
 
 
@@ -47,7 +48,7 @@ export default function Time() {
   const setData = option => {
     console.log(option)
   }
-
+   
   const [sound, setSound] = useState()
 
   async function playSound() {
@@ -72,6 +73,7 @@ export default function Time() {
       : undefined
   }, [sound])
 
+  }
   useEffect(() => {
     if (timerRunning) return
     stopTimer()
@@ -86,6 +88,7 @@ export default function Time() {
       setSeconds(secondsBreak)
       setMinutes(minutesBreak)
     }
+   
   }
 
   const stopTimer = () => {
@@ -188,12 +191,15 @@ export default function Time() {
   const windowHeight = Dimensions.get('window').height
 
   return (
+   
+    <View style={[styles.wrapper, { backgroundColor: colors.background }]}>
 
-    <View style={{ height: windowHeight }}>
-      {notes.length > 0 &&
-        notes.slice(0, 3).map((item, index) => {
-          return (
-            <View style={{ position: 'absolute', zIndex: 1 }} key={item.id}>
+      <ScrollView style={{flex: 1}}>    
+            {notes.length > 0 &&
+            notes.slice(0, 3).map((item, index) => {
+            return (
+              <View style={{ height: windowHeight }}>
+               <View style={{ position: 'absolute', zIndex: 1 }} key={item.id}>
               <Draggable x={0} y={index * 230}>
                 <StickyNote
                   data={item}
@@ -202,11 +208,11 @@ export default function Time() {
                 />
               </Draggable>
             </View>
+             </View>
           )
+          
         })}
-    <View style={[styles.wrapper, { backgroundColor: colors.background }]}>
-      <ScrollView>
-
+       
         <View style={styles.containerLogo}>
           <Image
             source={
@@ -349,7 +355,8 @@ export default function Time() {
             </View>
           </View>
 
-          <StatusBar style="auto" />
+          <StatusBar style="auto" /> 
+                
         </View>
       </ScrollView>
     </View>
@@ -358,7 +365,7 @@ export default function Time() {
 
 const styles = StyleSheet.create({
   wrapper: {
-    flex: 1
+    flex: 1,
   },
   addNoteButton: {
     backgroundColor: '#FF9C9C',
@@ -371,7 +378,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     position: 'absolute',
     right: 20,
-    bottom: 20
+    bottom:-20
   },
   containerLogo: {
     display: 'flex',

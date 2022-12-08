@@ -22,10 +22,10 @@ export default function ModalPicker(props) {
             navigation.navigate('ListaTODO');
               }
          
-       /* if (option == 'Notas'){     
-                navigation.navigate('Home');;
+      if (option == 'Notas'){     
+                navigation.navigate('StickyNotes');
                   
-        }*/
+        }
     
     }
 
