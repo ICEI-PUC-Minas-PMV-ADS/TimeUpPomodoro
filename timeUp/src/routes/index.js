@@ -14,6 +14,7 @@ import Time from '../pages/Timer'
 import ListaTodo from '../pages/Infos/listaTodo'
 import Home from '../pages/Notas/Home/home'
 import Notas from '../pages/Notas/Notas/notas'
+import StickyNotes from '../pages/StickyNotes'
 
 
 const Stack = createNativeStackNavigator()
@@ -23,17 +24,7 @@ export default function Routes(){
     return(
     
         <Stack.Navigator initialRouteName='Welcome'>
-        
-          <Stack.Screen
-            name="Time"
-            component={Time}        
-            options={{headerShown: false}}
-            />
-            <Stack.Screen
-            name="Welcome"
-            component={Welcome}
-            options={{headerShown: false}}
-            />
+      
             <Stack.Screen
             name="SignIn"
             component={SignIn}
@@ -85,6 +76,22 @@ export default function Routes(){
             component={Home}
             options={{ headerShown: false }}
               />
+              
+          <Stack.Screen
+            name="Time"
+            component={Time}        
+            options={{headerShown: false}}
+            />
+            <Stack.Screen
+              name="StickyNotes"
+              component={StickyNotes}
+              options={{ headerShown: false }}
+            />
+            <Stack.Screen
+            name="Welcome"
+            component={Welcome}
+            options={{headerShown: false}}
+            />
            
         </Stack.Navigator>
           

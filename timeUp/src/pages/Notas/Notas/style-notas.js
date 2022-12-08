@@ -13,7 +13,7 @@ export default StyleSheet.create({
     flexDirection: 'row',
     width: '100%',
     borderBottomWidth: 1,
-    borderBottomColor: '#cccccc',
+    borderBottomColor: '#FF9C9C',
     paddingBottom: 2
   },
 
@@ -35,7 +35,7 @@ export default StyleSheet.create({
   },
 
   optionIcon: {
-    color: '#666666'
+    color: '#FF9C9C'
   },
 
   textOption: {
@@ -54,11 +54,11 @@ export default StyleSheet.create({
   },
   textButton: {
     textTransform: 'uppercase',
-    color: '#d85a2c',
+    color: '#FF9C9C',
     fontWeight: 'bold'
   },
   iconButton: {
-    color: '#d85a2c'
+    color: '#FF9C9C'
   },
   labelInput: {
     width: '90%',
@@ -78,7 +78,7 @@ export default StyleSheet.create({
   },
   bold: {
     borderWidth: 1,
-    borderColor: '#000',
+    borderColor: '#FF9C9C',
     justifyContent: 'center',
     alignItems: 'center',
     height: 18,
